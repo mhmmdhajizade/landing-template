@@ -8,7 +8,7 @@ export const AppSecLayout = styled.div`
   &:after {
     content: "";
     width: 100%;
-    height: 100px;
+    height: 140px;
     background-image: url(${WaveShape});
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +31,9 @@ export const AppSecLayout = styled.div`
   .secondRow{
       .leftCol{
         text-align: left;
+      }
+      .rightCol{
+        text-align: center;
       }
   }
   .lastRow {

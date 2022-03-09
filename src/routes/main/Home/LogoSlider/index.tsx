@@ -104,7 +104,6 @@ function LogoSlider() {
                         hide:true
                     }}
                     onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                 >
                     {images.map((item, index) => {
                         return <SwiperSlide>
