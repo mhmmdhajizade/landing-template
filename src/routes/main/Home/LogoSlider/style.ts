@@ -50,5 +50,4 @@ export const LogoImg = styled.img<Partial<IProps>>`
   ${(props) => (props.$height ? "height:" + props.$height : "height:70%")};
   margin: 0.5rem 0 1rem;
   object-fit: cover;
-  vertical-align: baseline;
 `;

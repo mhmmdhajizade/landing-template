@@ -1,0 +1,11 @@
+@font-face {
+    font-family: DmSans;
+    src: url("../fonts/iransans/DMSans-Bold.ttf");
+}
+
+body{
+    background-color: white !important;
+    width: 100%;
+    font-family: DmSans !important;
+
+}
