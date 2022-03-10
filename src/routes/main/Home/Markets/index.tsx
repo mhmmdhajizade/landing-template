@@ -8,7 +8,7 @@ import img3 from 'assets/img/h5-img-12.png'
 function Markets() {
     return (
         <Fragment>
-            <MarketSec className='container-fluid'>
+            <MarketSec as="section" className='container-fluid'>
                 <div className='container'>
                     <Typography $fontSize='48px' className='title'>
                         3Commas helps traders win regardless of market conditions

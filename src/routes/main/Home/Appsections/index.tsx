@@ -7,19 +7,19 @@ import classNames from 'classnames'
 
 const data = [
     {
-        img : "asdasd",
-        title : "asdasdas",
-        desc : "asdasdasd"
+        img: "asdasd",
+        title: "asdasdas",
+        desc: "asdasdasd"
     },
     {
-        img : "asdasd",
-        title : "asdasdas",
-        desc : "asdasdasd"
+        img: "asdasd",
+        title: "asdasdas",
+        desc: "asdasdasd"
     },
     {
-        img : "asdasd",
-        title : "asdasdas",
-        desc : "asdasdasd"
+        img: "asdasd",
+        title: "asdasdas",
+        desc: "asdasdasd"
     }
 ]
 
@@ -29,34 +29,36 @@ function AppParts() {
         <Fragment>
             <AppSecLayout as="section">
                 <div className="container">
-                {data.map((item,index)=>{
-                return(
-                    <div className={classNames("row mainRow",{
-                        "flex-row-reverse" : index%2
-                    })} key={index}>
-                    <div className="col-lg-6 col-12">
-                    <img alt='' src={img} />                        
-                    </div>
-                    <div className="col-lg-6 col-12">
-                        <Typography $fontSize='40px'>
-                            The right things
-                        </Typography>
-                        <div className="textSec">
-
-                            <div className="col-lg-9 col-12">
-                                <Typography $fontSize='18px'>
-                                    An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui.
-                                </Typography>
+                    {data.map((item, index) => {
+                        return (
+                            <div className={classNames("row mainRow", {
+                                "flex-row-reverse": index % 2,
+                                "lastRow": index === 2
+                            })} key={index}>
+                                <div className="col-lg-6 col-12 imgSec">
+                                    <img alt='' src={img} />
+                                </div>
+                                <div className="col-lg-6 col-12">
+                                    <div className='textBox'>
+                                        <Typography $fontSize='40px'>
+                                            The right things
+                                        </Typography>
+                                        <div className="textSec">
+                                            <div className="col-lg-9 col-12">
+                                                <Typography $fontSize='18px'>
+                                                    An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui.
+                                                </Typography>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                )
-            })}
-               
+                        )
+                    })}
+
                 </div>
             </AppSecLayout>
-       
+
             {/* <AppSecLayout className='container-fluid'>
                 <div className="row mainRow">
                     <div className="col-lg-6 col-12 leftCol">

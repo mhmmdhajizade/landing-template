@@ -11,9 +11,9 @@ import image6 from 'assets/img/Signals.svg'
 function AppFeatures() {
     return (
         <Fragment>
-            <AppFeaturesSec className="container-fluid">
+            <AppFeaturesSec as="section" className="container-fluid">
                 <div className="container">
-                    <Typography $fontSize='3rem'>Straightforward and quick</Typography>
+                    <Typography $fontSize='2.5rem'>Straightforward and quick</Typography>
                     <div className="row">
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image1} />

@@ -45,7 +45,7 @@ function Comments() {
     ])
     return (
         <Fragment>
-            <CommentSec className='container-fluid'>
+            <CommentSec as="section" className='container-fluid'>
                 <div className="container">
                     <div className='header'>
                         <div>
@@ -81,21 +81,23 @@ function Comments() {
                     >
                         {comments.map((item, index) => {
                             return <SwiperSlide>
-                                <div className='container-fluid'>
-                                    <div>
-                                        <img alt='' src={item.image} />
-                                    </div>
-                                    <div>
-                                        <Typography $fontSize='1.5rem'>
-                                            {item.commentText}
-                                        </Typography>
-                                        <div className='userDetail'>
-                                            <Typography $fontSize='0.75rem'>
-                                                {item.job}
+                                <div className='sliderSec'>
+                                    <div className="row">
+                                        <div className='col-lg-2 col-3'>
+                                            <img alt='' src={item.image} />
+                                        </div>
+                                        <div className='col-lg-10 col-9'>
+                                            <Typography className='commentText' $fontSize='1.5rem'>
+                                                {item.commentText}
                                             </Typography>
-                                            <Typography $fontSize='1.4rem'>
-                                                {item.userName}
-                                            </Typography>
+                                            <div className='userDetail'>
+                                                <Typography $fontSize='0.75rem'>
+                                                    {item.job}
+                                                </Typography>
+                                                <Typography $fontSize='1.4rem'>
+                                                    {item.userName}
+                                                </Typography>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

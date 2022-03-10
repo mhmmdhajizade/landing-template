@@ -4,12 +4,12 @@ export const FooterSec = styled.div`
   background-color: #1d1d1f;
   display: flex;
   align-items: center;
+  margin-top: 70px;
   .container {
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
     .col-lg-4 {
-      margin-right: 30px;
       input {
         background-color: #1d1d1f;
         border: none;

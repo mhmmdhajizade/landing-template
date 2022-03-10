@@ -5,6 +5,7 @@ type IProps = {
 };
 
 export const LogoSliderSec = styled.div`
+  margin-top: 70px;
   .container-fluid {
     background-color: white;
     padding-top: 20px;
@@ -24,7 +25,7 @@ export const LogoSliderSec = styled.div`
       align-items: center;
     }
   }
-  .swiper-scrollbar{
+  .swiper-scrollbar {
     display: none;
   }
 

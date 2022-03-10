@@ -3,6 +3,7 @@ import WaveShape from "assets/img/h5-img-5.svg";
 
 export const AppSecLayout = styled.div`
   background-color: #f3f8fa;
+  margin-top: 70px;
   position: relative;
   padding-bottom: 100px;
   &:after {
@@ -16,29 +17,16 @@ export const AppSecLayout = styled.div`
     bottom: 0;
     left: 0;
   }
+  .textBox{
+    margin-left: 50px;
+  }
   .mainRow {
     align-items: center;
-    .leftCol {
-      padding-right: 20px;
-      text-align: center;
-      
-    }
-    .rightCol {
-      padding-left: 20px;
-      
-    }
-  }
-  .secondRow{
-      .leftCol{
-        text-align: left;
-      }
-      .rightCol{
-        text-align: center;
-      }
   }
   .lastRow {
-    .rightCol {
-      padding-bottom: 100px;
-    }
+    margin-bottom: 120px;
+  }
+  .imgSec {
+    text-align: center;
   }
 `;

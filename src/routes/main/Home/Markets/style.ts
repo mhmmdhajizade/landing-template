@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MarketSec = styled.div`
   background-color: white;
+  margin-top: 70px;
   text-align: left;
   .container {
       padding-top: 20px;

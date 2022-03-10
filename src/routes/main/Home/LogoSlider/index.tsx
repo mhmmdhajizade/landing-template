@@ -18,7 +18,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { LogoSliderSec , LogoImg } from './style';
+import { LogoSliderSec, LogoImg } from './style';
 import { Typography } from 'components/HtmlElements';
 import index from 'constants/asyncComponent';
 
@@ -42,19 +42,19 @@ function LogoSlider() {
                 index: 1,
                 url: logo2,
                 height: "50%",
-                width:"50%"
+                width: "50%"
             },
             {
                 index: 2,
                 url: logo3,
                 height: "50%",
-                width:"50%"
+                width: "50%"
             },
             {
                 index: 3,
                 url: logo4,
                 height: "50%",
-                width:"50%"
+                width: "50%"
             },
             {
                 index: 4,
@@ -72,7 +72,7 @@ function LogoSlider() {
                 index: 7,
                 url: logo8,
                 height: "50%",
-                width:"50%"
+                width: "50%"
             },
             {
                 index: 8,
@@ -85,32 +85,34 @@ function LogoSlider() {
 
     return (
         <Fragment>
-            <LogoSliderSec>
+            <LogoSliderSec as="section">
                 <div className='container-fluid text-center'>
                     <Typography as="h2">Companies we are working with:</Typography>
                 </div>
-                <Swiper
-                    modules={[Navigation, A11y, Autoplay]}
-                    spaceBetween={0}
-                    slidesPerView={6}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    }}
-                    loop
-                    freeMode
-                    scrollbar={{
-                        draggable: true,
-                        hide:true
-                    }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                >
-                    {images.map((item, index) => {
-                        return <SwiperSlide>
-                            <LogoImg alt='' src={item.url} $height={item.height ? item.height: undefined} $width={item.width ? item.width: undefined}/>
-                        </SwiperSlide>
-                    })}
-                </Swiper>
+                <div className="container">
+                    <Swiper
+                        modules={[Navigation, A11y, Autoplay]}
+                        spaceBetween={0}
+                        slidesPerView={6}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        loop
+                        freeMode
+                        scrollbar={{
+                            draggable: true,
+                            hide: true
+                        }}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        {images.map((item, index) => {
+                            return <SwiperSlide>
+                                <LogoImg alt='' src={item.url} $height={item.height ? item.height : undefined} $width={item.width ? item.width : undefined} />
+                            </SwiperSlide>
+                        })}
+                    </Swiper>
+                </div>
             </LogoSliderSec>
         </Fragment>
     )

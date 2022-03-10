@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CommentSec = styled.div`
   background-color: white;
+  margin-top: 70px;
   .container {
     p {
       margin-bottom: 0;
@@ -26,11 +27,15 @@ export const CommentSec = styled.div`
     .swiper-slide {
       margin-top: 20px;
       margin-bottom: 20px;
-      .container-fluid {
+      .sliderSec {
         display: flex;
-        align-items: center;
-        p{
-            margin-left: 20px;
+        align-items: baseline;
+        .col-lg-2{
+          text-align: center;
+          padding-right: 0;
+        }
+        .commentText{
+            margin-bottom: 50px;
         }
         .userDetail{
             margin-top: 20px;

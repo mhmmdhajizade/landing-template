@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AppToolsSec = styled.div`
   background-color: white;
+  margin-top: 70px;
   .col-lg-6 {
     padding: 10px;
     .line {
@@ -38,13 +39,16 @@ export const AppToolsSec = styled.div`
         height: 80px;
       }
     }
-    .col-lg-5 {
+    .col-lg-10 {
       display: flex;
       flex-direction: column;
       padding: 0;
       justify-content: space-around;
       .textBox {
         margin-bottom: 10px;
+      }
+      p{
+        margin-bottom: 0;
       }
     }
     .col-lg-2 {
