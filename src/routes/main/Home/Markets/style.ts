@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const MarketSec = styled.div`
-  background-color: white;
   margin-top: 70px;
   text-align: left;
   .container {
       padding-top: 20px;
+    .row{
+      margin-top: 50px;
+    }
     .title {
       font-weight: bold;
     }
@@ -13,6 +15,7 @@ export const MarketSec = styled.div`
       text-align: justify;
       img {
         margin: 10px;
+        margin-bottom: 50px;
       }
     }
   }

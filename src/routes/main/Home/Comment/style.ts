@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CommentSec = styled.div`
-  background-color: white;
   margin-top: 70px;
   .container {
     p {

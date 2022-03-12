@@ -7,7 +7,6 @@ type IProps = {
 export const LogoSliderSec = styled.div`
   margin-top: 70px;
   .container-fluid {
-    background-color: white;
     padding-top: 20px;
     h2 {
       margin-bottom: 0;
@@ -17,7 +16,6 @@ export const LogoSliderSec = styled.div`
   .swiper {
     width: 100%;
     height: 100%;
-    background-color: white;
     margin-left: auto;
     margin-right: auto;
     align-items: center;

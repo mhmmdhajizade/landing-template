@@ -2,8 +2,13 @@ import { Button, Typography } from 'components/HtmlElements'
 import React, { Fragment } from 'react'
 import { AppToolsSec } from './style'
 import image from 'assets/img/h5-img-31.png'
+import { useTheme } from 'styled-components'
 
 function AppTools() {
+
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
+
     return (
         <Fragment>
             <AppToolsSec as="section" className='container-fluid'>
@@ -13,7 +18,7 @@ function AppTools() {
                             <img alt='' src={image} />
                         </div>
                         <div className="col-lg-6 col-12">
-                            <Typography $fontSize='2rem' className='mainTitle'>How does this app works?</Typography>
+                            <Typography $fontSize='2rem' className='mainTitle'>{dictionary.appToolsMainTitle}</Typography>
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className="col-lg-2 col-12">

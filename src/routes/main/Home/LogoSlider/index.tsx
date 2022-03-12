@@ -20,7 +20,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { LogoSliderSec, LogoImg } from './style';
 import { Typography } from 'components/HtmlElements';
-import index from 'constants/asyncComponent';
+import { useTheme } from 'styled-components';
 
 interface iImages {
     index: number,
@@ -31,6 +31,8 @@ interface iImages {
 
 function LogoSlider() {
     const [images, setimages] = useState<iImages[]>([])
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
 
     useEffect(() => {
         setimages([
@@ -87,7 +89,7 @@ function LogoSlider() {
         <Fragment>
             <LogoSliderSec as="section">
                 <div className='container-fluid text-center'>
-                    <Typography as="h2">Companies we are working with:</Typography>
+                    <Typography as="h2">{dictionary.logoSectionTitle}</Typography>
                 </div>
                 <div className="container">
                     <Swiper

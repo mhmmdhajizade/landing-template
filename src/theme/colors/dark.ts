@@ -7,14 +7,15 @@ const darkStyle = {
         txt : '#777777',
         primary: '#0d122f',
         grey: '#242424',
-
+        lightgreen: '#364d4e',
         white: "#ffffff",
         black: "#000000",
         red: '#E16262',
         blue: '#035397',
         green: '#3A9679',
         yellow: '#F0A500',
-        tradewind:'#62adb0',
+        tradewind:'#44787a',
+        lightgrey : "#333335"
     }
 }
 export default Object(darkStyle);

@@ -1,4 +1,4 @@
-export type Colors = "primary" | "red" | "green" | "yellow" | "blue" | "grey" | "text" | "txt" | "dark" | "light" | "white" | "black" | "tradewind";
+export type Colors = "primary" | "red" | "green" | "yellow" | "blue" | "grey" | "text" | "txt" | "dark" | "light" | "white" | "black" | "tradewind" | "lightgreen" | "lightgrey";
 
 export type INameStyle = "dark" | "light";
 export type IMoodColor = "darker" | "darkest" | "lighter" | "lightest";

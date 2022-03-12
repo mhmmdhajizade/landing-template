@@ -1,11 +1,15 @@
 import { Button } from "components/HtmlElements";
 import { Fragment } from "react";
-import styled from "styled-components";
 import logo from 'assets/img/logo-light-img-1-1.png'
 import { HeaderLay, HeaderSec, HeaderWrapepr, Logo, LogoSec, Menusec, Navbar, NavItems, SignSec } from "./style";
+import { useTheme } from "styled-components";
 
 
 const HeaderPanel = () => {
+
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
+    
     return (
         <Fragment>
             <HeaderSec>
@@ -21,15 +25,8 @@ const HeaderPanel = () => {
                                         $textColor={{
                                             name: "white"
                                         }}
-                                        $bgColor={{
-                                            name: 'tradewind'
-                                        }}
-                                        $borderColor={{
-                                            name: 'tradewind',
-                                            opacity: 0
-                                        }}
                                     >
-                                        NavItem 1
+                                        {dictionary.navitem1}
                                     </Button>
                                 </NavItems>
                                 <NavItems>
@@ -37,15 +34,9 @@ const HeaderPanel = () => {
                                         $textColor={{
                                             name: "white"
                                         }}
-                                        $bgColor={{
-                                            name: 'tradewind'
-                                        }}
-                                        $borderColor={{
-                                            name: 'tradewind',
-                                            opacity: 0
-                                        }}
+                                   
                                     >
-                                        NavItem 2
+                                        {dictionary.navitem2}
                                     </Button>
                                 </NavItems>
                                 <NavItems>
@@ -53,42 +44,29 @@ const HeaderPanel = () => {
                                         $textColor={{
                                             name: "white"
                                         }}
-                                        $bgColor={{
-                                            name: 'tradewind'
-                                        }}
-                                        $borderColor={{
-                                            name: 'tradewind',
-                                            opacity: 0
-                                        }}>
-                                        NavItem 3
+                                    >
+                                        {dictionary.navitem3}
                                     </Button>
                                 </NavItems>
                             </Navbar>
                         </Menusec>
                         <SignSec>
+                            
                             <Button
                                 $textColor={{
                                     name: "white"
                                 }}
-                                $bgColor={{
-                                    name: 'tradewind'
-                                }}
-                                $borderColor={{
-                                    name: 'tradewind',
-                                    opacity: 0
-                                }}>Sign in</Button>
+                             >
+                                {dictionary.signup}
+                            </Button>
                             <Button
                                 $textColor={{
                                     name: "white"
                                 }}
-                                $bgColor={{
-                                    name: 'tradewind'
-                                }}
-                                $borderColor={{
-                                    name: 'tradewind',
-                                    opacity: 0
-                                }}
-                            >Sign up</Button>
+                             
+                            >
+                                {dictionary.signin}
+                            </Button>
                         </SignSec>
                     </HeaderWrapepr>
                 </HeaderLay>

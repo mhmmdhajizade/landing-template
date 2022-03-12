@@ -2,8 +2,13 @@ import { Button, Typography } from 'components/HtmlElements'
 import React, { Fragment } from 'react'
 import { DownloadBoxSec } from './style'
 import image from 'assets/img/h5-img-31.png'
+import { useTheme } from 'styled-components'
 
 function DownloadBox() {
+
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
+
     return (
         <Fragment>
             <DownloadBoxSec as="section" className='container-fluid'>
@@ -11,10 +16,10 @@ function DownloadBox() {
                     <div className="row">
                         <div className="col-lg-6 col-12">
                             <Typography $fontSize='3rem'>
-                                Manage your positions in one tap with the 3Commas mobile app
+                                {dictionary.downloadBoxMainTitle}
                             </Typography>
                             <Typography>
-                                Download the mobile application, track strategy statistics, launch bots, and close orders. Whether you’re at home or on the road, manage your positions anywhere.
+                                {dictionary.downloadBoxDescription}
                             </Typography>
                             <div className="downloadBtn">
                                 <Button $borderColor={{ name: "black" }} $textColor={{ name: "black" }} $bgColor={{ name: "white" }}>

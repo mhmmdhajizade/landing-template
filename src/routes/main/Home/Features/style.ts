@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AppFeaturesSec = styled.div`
-  background-color: #f3f8fa;
+  background-color: ${props => props.theme.style.getColor("lightgreen")};
   margin-top: 70px;
   padding-top: 30px;
   padding-bottom: 30px;

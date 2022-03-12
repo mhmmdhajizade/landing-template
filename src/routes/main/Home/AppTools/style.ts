@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AppToolsSec = styled.div`
-  background-color: white;
   margin-top: 70px;
   .col-lg-6 {
     padding: 10px;

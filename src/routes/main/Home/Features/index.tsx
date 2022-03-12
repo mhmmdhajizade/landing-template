@@ -7,13 +7,18 @@ import image3 from 'assets/img/Paper trading.svg'
 import image4 from 'assets/img/Smart Cover.svg'
 import image5 from 'assets/img/Options Bots.svg'
 import image6 from 'assets/img/Signals.svg'
+import { useTheme } from 'styled-components'
 
 function AppFeatures() {
+
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
+
     return (
         <Fragment>
             <AppFeaturesSec as="section" className="container-fluid">
                 <div className="container">
-                    <Typography $fontSize='2.5rem'>Straightforward and quick</Typography>
+                    <Typography $fontSize='2.5rem'>{dictionary.appFeaturesMainTitle}</Typography>
                     <div className="row">
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image1} />
@@ -57,7 +62,7 @@ function AppFeatures() {
                         </div>
                     </div>
                 </div>
-                <Button $bgColor={{ name: "tradewind"}} $textColor={{name: "white"}} $sizing='lg'>Sign up for free</Button>
+                <Button $bgColor={{ name: "tradewind"}} $textColor={{name: "white"}} $sizing='lg'>{dictionary.appFeaturesButton}</Button>
             </AppFeaturesSec>
         </Fragment>
     )

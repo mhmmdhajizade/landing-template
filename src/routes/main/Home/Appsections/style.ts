@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import WaveShape from "assets/img/h5-img-5.svg";
+import WaveShapeDark from "assets/img/dark/h5-img-5.svg";
+import WaveShapeLight from "assets/img/light/h5-img-5.svg";
+
 
 export const AppSecLayout = styled.div`
-  background-color: #f3f8fa;
+  background-color: ${props => props.theme.style.getColor("lightgreen")};
   margin-top: 70px;
   position: relative;
   padding-bottom: 100px;
@@ -10,7 +12,8 @@ export const AppSecLayout = styled.div`
     content: "";
     width: 100%;
     height: 140px;
-    background-image: url(${WaveShape});
+    ${props => props.theme.style.name === "light" && `background-image: url(${WaveShapeLight});`}
+    ${props => props.theme.style.name === "dark" && `background-image: url(${WaveShapeDark});`}
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -24,9 +27,12 @@ export const AppSecLayout = styled.div`
     align-items: center;
   }
   .lastRow {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
   .imgSec {
     text-align: center;
+  }
+  .container{
+    padding-top: 100px;
   }
 `;

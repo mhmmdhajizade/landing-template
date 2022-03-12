@@ -10,6 +10,7 @@ import { Button, Typography } from 'components/HtmlElements';
 import pImage1 from 'assets/img/dowfffnload.png'
 import pImage2 from 'assets/img/download.png'
 import pImage3 from 'assets/img/h5-testimonials-img-1.png'
+import { useTheme } from 'styled-components';
 
 interface iComments {
     id: number,
@@ -43,6 +44,8 @@ function Comments() {
             image: pImage3
         }
     ])
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
     return (
         <Fragment>
             <CommentSec as="section" className='container-fluid'>
@@ -50,10 +53,10 @@ function Comments() {
                     <div className='header'>
                         <div>
                             <Typography>
-                                What our users say about us
+                                {dictionary.commentSectionSmallTitle}
                             </Typography>
                             <Typography $fontSize='3rem'>
-                                Testimonial
+                                {dictionary.commentSectionMainTitle}
                             </Typography>
                         </div>
                         <div className='sliderBtn'>

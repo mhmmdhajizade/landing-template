@@ -23,9 +23,7 @@ const Input = styled.input`
   &:disabled {
     background-color: ${(props) => props.theme.style.getColor("grey")};
   }
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='${(
-    props
-  ) => props.theme.style.getColor("primary")}' /%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='${(props) => props.theme.style.getColor("primary")}' /%3e%3c/svg%3e");
   border: 1px solid ${(props) => props.theme.style.getColor("grey", "darker")};
   ${(props) => {
     if (props.theme.lang.dictionary["theme.dir"] === "ltr") {
@@ -43,18 +41,18 @@ const Input = styled.input`
   &:checked {
     background-color: ${(props) => props.theme.style.getColor("primary")};
     border-color: ${(props) =>
-      props.theme.style.getColor("primary", "darkest")};
+    props.theme.style.getColor("primary", "darkest")};
     ${(props) => {
-      if (props.theme.lang.dictionary["theme.dir"] === "ltr") {
-        return `
+    if (props.theme.lang.dictionary["theme.dir"] === "ltr") {
+      return `
             background-position: right center;
             `;
-      } else {
-        return `
+    } else {
+      return `
             background-position: left center;
             `;
-      }
-    }}
+    }
+  }}
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='${(props) => props.theme.style.getColor("white")}' /%3e%3c/svg%3e");
   }
 `;

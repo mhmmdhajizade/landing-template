@@ -19,13 +19,14 @@ interface ThemeInterface {
 const GlobalStyle = createGlobalStyle`
   body {
     color: ${props => props.theme.style.color['text']};
-    background-color: ${props => props.theme.style.color['grey']};
+    background-color: ${props => props.theme.style.color['light']};
     font-family : ${props => props.theme.lang.dictionary['theme.locale'] === "fa-IR" ? "iransans" : "Roboto"}
   }
 `
 const CustomThemeProvider = ({ children }: IProviderProps) => {
     const style = useStyle();
     const lang = useLang();
+    
     return (
         <ThemeProvider theme={{
             style,

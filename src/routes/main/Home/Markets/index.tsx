@@ -4,17 +4,22 @@ import { MarketSec } from './style'
 import img1 from 'assets/img/h5-img-10.png'
 import img2 from 'assets/img/h5-img-11.png'
 import img3 from 'assets/img/h5-img-12.png'
+import { useTheme } from 'styled-components'
 
 function Markets() {
+
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
+
     return (
         <Fragment>
             <MarketSec as="section" className='container-fluid'>
                 <div className='container'>
                     <Typography $fontSize='48px' className='title'>
-                        3Commas helps traders win regardless of market conditions
+                        {dictionary.marketMainTitle}
                     </Typography>
                     <Typography $fontSize='20px'>
-                        For every market condition, there’s a trading strategy that can profit from it. 3Commas bots happen to be really good at reducing average acquisition costs, directly increasing your profit margins from each trade.
+                        {dictionary.marketParagraph}
                     </Typography>
                     <div className="row">
                         <div className="market col-lg-4 col-12">

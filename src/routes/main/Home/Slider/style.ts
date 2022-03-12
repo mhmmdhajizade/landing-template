@@ -1,11 +1,12 @@
 
 
 import styled from "styled-components";
-import waveBg from "assets/img/wave-bg.svg";
+import waveBgDark from "assets/img/dark/wave-bg.svg";
+import waveBgLight from "assets/img/light/wave-bg.svg";
 
 
 export const Slider = styled.div`
-background-color : ${props => props.theme.style.getColor("tradewind")};
+background-color : ${props => props.theme.style.getColor("tradewind" )};
 align-items: center;
 width: 100%;
 display: flex;
@@ -21,7 +22,8 @@ position : relative;
     content :"";
     width : 100%;
     height : 100px;
-    background-image: url(${waveBg});
+    ${props => props.theme.style.name === "light" && `background-image: url(${waveBgLight});`}
+    ${props => props.theme.style.name === "dark" && `background-image: url(${waveBgDark});`}
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -35,7 +37,9 @@ position : relative;
         margin-bottom: 0;
     }
     button{
-        margin-top: 10px;
+        margin-top: 30px;
+        width: 70%;
+        height: 45px;
     }
 }
 `

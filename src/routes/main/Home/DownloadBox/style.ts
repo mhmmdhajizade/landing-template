@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const DownloadBoxSec = styled.div`
-    background-color: white;
     margin-top: 70px;
     display: flex;
     .row{
