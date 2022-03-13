@@ -13,7 +13,7 @@ export const AppToolsSec = styled.div`
       background: linear-gradient(
         180deg,
         ${props => props.theme.style.getColor('grey','lighter',0)} 0%,
-        ${props => props.theme.style.getColor('tradewind','darkest')} 50%,
+        ${props => props.theme.style.getColor('primary','darkest')} 50%,
         ${props => props.theme.style.getColor('grey','lighter',0)} 100%
       );
       margin-left: 30px;

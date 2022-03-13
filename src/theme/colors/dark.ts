@@ -1,21 +1,18 @@
 const darkStyle = { 
     name: 'dark',
     color: {
-        light: '#0d0d0d',
-        dark: '#fafafa',
-        text : '#c7c7c7',
+        light: '#0D0D0D',
+        dark: '#FAFAFA',
+        text : '#C7C7C7',
         txt : '#777777',
-        primary: '#0d122f',
-        grey: '#242424',
-        lightgreen: '#364d4e',
-        white: "#ffffff",
+        primary: '#44787a',
+        grey: '#364d4e',
+        white: "#FFFFFF",
         black: "#000000",
-        red: '#E16262',
+        red: '#FF2626',
         blue: '#035397',
         green: '#3A9679',
         yellow: '#F0A500',
-        tradewind:'#44787a',
-        lightgrey : "#333335"
     }
 }
 export default Object(darkStyle);

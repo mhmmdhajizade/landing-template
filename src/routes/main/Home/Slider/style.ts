@@ -6,7 +6,7 @@ import waveBgLight from "assets/img/light/wave-bg.svg";
 
 
 export const Slider = styled.div`
-background-color : ${props => props.theme.style.getColor("tradewind" )};
+background-color : ${props => props.theme.style.getColor("primary" )};
 align-items: center;
 width: 100%;
 display: flex;

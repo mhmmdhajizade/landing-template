@@ -22,13 +22,13 @@ const GlobalStyle = createGlobalStyle`
     src: url("./assets/fonts/textFonts/DMSans-Bold.ttf");
 }
 @font-face {
-    font-family: "Samim";
-    src: url("./assets/fonts/textFonts/Samim-Medium.ttf");
+    font-family: "Shabnam";
+    src: url("./assets/fonts/textFonts/Shabnam-FD.ttf");
 }
   body {
     color: ${props => props.theme.style.getColor('text')};
     background-color: ${props => props.theme.style.getColor('light')};
-    font-family : ${props => props.theme.lang.dictionary['theme.langLabel'] === "fa" ? "Samim" : "DmSans"}
+    font-family : ${props => props.theme.lang.dictionary['theme.langLabel'] === "fa" ? "Shabnam" : "DmSans"}
   }
 `
 const CustomThemeProvider = ({ children }: IProviderProps) => {

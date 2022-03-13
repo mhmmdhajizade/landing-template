@@ -62,7 +62,7 @@ function AppFeatures() {
                         </div>
                     </div>
                 </div>
-                <Button $bgColor={{ name: "tradewind"}} $textColor={{name: "white"}} $sizing='lg'>{dictionary.appFeaturesButton}</Button>
+                <Button $bgColor={{ name: "primary"}} $textColor={{name: "white"}} $sizing='lg'>{dictionary.appFeaturesButton}</Button>
             </AppFeaturesSec>
         </Fragment>
     )

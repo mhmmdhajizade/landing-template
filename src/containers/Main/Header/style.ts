@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderSec = styled.header`
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
-  border-color: ${props => props.theme.style.getColor("tradewind" , "darker")};
+  border-color: ${props => props.theme.style.getColor("primary" , "darker")};
   position: relative;
   display: inline-block;
   width: 100%;
@@ -13,7 +13,7 @@ export const HeaderSec = styled.header`
   box-sizing: border-box;
 `;
 export const HeaderLay = styled.div`
-  background-color: ${props => props.theme.style.getColor("tradewind")};
+  background-color: ${props => props.theme.style.getColor("primary")};
   position: relative;
   display: flex;
   align-items: center;

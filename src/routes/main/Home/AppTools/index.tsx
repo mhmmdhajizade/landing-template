@@ -23,13 +23,13 @@ function AppTools() {
                                 <div className="row">
                                     <div className="col-lg-2 col-12">
                                         <div className="line">
-                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'tradewind' }} className='btn'>
+                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'primary' }} className='btn'>
                                                 <i className="icon-linearicons_laptop-phone icons"></i>
                                             </Button>
-                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'tradewind' }} className='btn'>
+                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'primary' }} className='btn'>
                                                 <i className="icon-lnr-cloud icons"></i>
                                             </Button>
-                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'tradewind' }} className='btn'>
+                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'primary' }} className='btn'>
                                                 <i className="icon-shield-check icons"></i>
                                             </Button>
                                         </div>

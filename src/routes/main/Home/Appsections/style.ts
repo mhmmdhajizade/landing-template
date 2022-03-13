@@ -4,7 +4,7 @@ import WaveShapeLight from "assets/img/light/h5-img-5.svg";
 
 
 export const AppSecLayout = styled.div`
-  background-color: ${props => props.theme.style.getColor("lightgreen")};
+  background-color: ${props => props.theme.style.getColor("grey")};
   margin-top: 70px;
   position: relative;
   padding-bottom: 100px;
