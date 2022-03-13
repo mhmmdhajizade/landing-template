@@ -13,40 +13,40 @@ function Markets() {
 
     return (
         <Fragment>
-            <MarketSec as="section" className='container-fluid'>
+            <MarketSec as="section" className='container-fluid pb-4 '>
                 <div className='container'>
-                    <Typography $fontSize='48px' className='title'>
+                    <Typography $fontSize='48px' className='title mb-3'>
                         {dictionary.marketMainTitle}
                     </Typography>
                     <Typography $fontSize='20px'>
                         {dictionary.marketParagraph}
                     </Typography>
-                    <div className="row">
+                    <div className="row mt-5">
                         <div className="market col-lg-4 col-12">
-                            <img alt='' src={img1} />
-                            <Typography $fontSize='30px'>
-                                Bear markets
+                            <img alt='' src={img1} className='mb-3'/>
+                            <Typography $fontSize='30px' className='mt-3'>
+                                {dictionary.marketItemTitle_1}
                             </Typography>
                             <Typography $fontSize='18px'>
-                                Use DCA Short bots to borrow and sell tokens at the current price and buy them back at a lower price
+                                {dictionary.marketItemDesc_1}
                             </Typography>
                         </div>
                         <div className="market col-lg-4 col-12">
-                            <img alt='' src={img2} />
-                            <Typography $fontSize='30px'>
-                                Bull markets
+                            <img alt='' src={img2} className='mb-3'/>
+                            <Typography $fontSize='30px' className='mt-3'>
+                                {dictionary.marketItemTitle_2}
                             </Typography>
                             <Typography $fontSize='18px'>
-                                Use DCA Long bots to buy the natural dips and sell the spikes as the price rises over time, achieving a better average entry price for your positions
+                                {dictionary.marketItemDesc_2}
                             </Typography>
                         </div>
                         <div className="market col-lg-4 col-12">
-                            <img alt='' src={img3} />
-                            <Typography $fontSize='30px'>
-                                Sideways markets
+                            <img alt='' src={img3} className='mb-3'/>
+                            <Typography $fontSize='30px' className='mt-3'>
+                                {dictionary.marketItemTitle_3}
                             </Typography>
                             <Typography $fontSize='18px'>
-                                Use Grid bots to pick up cheaper tokens when they hit support levels and sell them when they’re close to resistance levels
+                                {dictionary.marketItemDesc_3}
                             </Typography>
                         </div>
                     </div>

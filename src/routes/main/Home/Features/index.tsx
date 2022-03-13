@@ -23,19 +23,19 @@ function AppFeatures() {
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image1} />
                             <Typography $fontSize="1.2rem">
-                                Create portfolios with any coin alocation and rebalance your account with a click.
+                                {dictionary.appFeaturesItem_1}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image2} />
                             <Typography $fontSize="1.2rem">
-                                Add multiple accounts to track your portfolio and check your daily PnL.
+                                {dictionary.appFeaturesItem_2}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image3} />
                             <Typography $fontSize="1.2rem">
-                                Trade without money. Test strategies safely and without any risk.
+                                {dictionary.appFeaturesItem_3}
                             </Typography>
                         </div>
                     </div>
@@ -45,19 +45,19 @@ function AppFeatures() {
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image4} />
                             <Typography $fontSize="1.2rem">
-                                Accrue additional profit with unexpected market moves. Sell and buy back coins.
+                                {dictionary.appFeaturesItem_4}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image5} />
                             <Typography $fontSize="1.2rem">
-                                A simple set of automated strategies to trade options on an exchange.
+                                {dictionary.appFeaturesItem_5}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
                             <img alt='' src={image6} />
                             <Typography $fontSize="1.2rem">
-                                Subscribe to signals provided by other traders to copy strategies.
+                                {dictionary.appFeaturesItem_6}
                             </Typography>
                         </div>
                     </div>

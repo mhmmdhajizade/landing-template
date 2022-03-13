@@ -57,6 +57,7 @@ const HeaderPanel = () => {
                                     name: "white"
                                 }}
                              >
+                                 <i className="icon-a6b6b86303967e34e75d4e2d9f9c810c" />
                                 {dictionary.signup}
                             </Button>
                             <Button
@@ -65,6 +66,7 @@ const HeaderPanel = () => {
                                 }}
                              
                             >
+                                <i className="icon-login"/>
                                 {dictionary.signin}
                             </Button>
                         </SignSec>

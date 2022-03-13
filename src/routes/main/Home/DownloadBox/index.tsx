@@ -25,15 +25,23 @@ function DownloadBox() {
                                 <Button $borderColor={{ name: "black" }} $textColor={{ name: "black" }} $bgColor={{ name: "white" }}>
                                     <i className="icon-1efb03c7b24448b2a95272321bf670ba icons"></i>
                                     <div>
-                                        <Typography $fontSize='0.75rem' className='smaller'>Download on the</Typography>
-                                        <Typography $fontSize='1.5rem'>App Store</Typography>
+                                        <Typography $fontSize='0.75rem' className='smaller'>
+                                            {dictionary.downloadBoxAppStoreButtonSmTitle}
+                                        </Typography>
+                                        <Typography $fontSize='1.5rem'>
+                                            {dictionary.downloadBoxAppStoreButtonLgTitle}
+                                        </Typography>
                                     </div>
                                 </Button>
                                 <Button $borderColor={{ name: "black" }} $textColor={{ name: "black" }} $bgColor={{ name: "white" }}>
                                     <i className="icon-icons8-google-play icons"></i>
                                     <div>
-                                        <Typography $fontSize='0.75rem' className='smaller'>Get it on</Typography>
-                                        <Typography $fontSize='1.5rem'>Google Play</Typography>
+                                        <Typography $fontSize='0.75rem' className='smaller'>
+                                            {dictionary.downloadBoxGooglePlayButtonSmTitle}
+                                        </Typography>
+                                        <Typography $fontSize='1.5rem'>
+                                            {dictionary.downloadBoxGooglePlayButtonLgTitle}
+                                        </Typography>
                                     </div>
                                 </Button>
                             </div>

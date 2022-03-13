@@ -23,46 +23,40 @@ function AppTools() {
                                 <div className="row">
                                     <div className="col-lg-2 col-12">
                                         <div className="line">
-                                            <Button $isCircle={true} $bgColor={{ name: "white" }} $borderColor={{ name: 'tradewind' }} className='btn'>
+                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'tradewind' }} className='btn'>
                                                 <i className="icon-linearicons_laptop-phone icons"></i>
                                             </Button>
-                                            <Button $isCircle={true} $bgColor={{ name: "white" }} $borderColor={{ name: 'tradewind' }} className='btn'>
+                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'tradewind' }} className='btn'>
                                                 <i className="icon-lnr-cloud icons"></i>
                                             </Button>
-                                            <Button $isCircle={true} $bgColor={{ name: "white" }} $borderColor={{ name: 'tradewind' }} className='btn'>
-                                                <i className="icon-shield-svgrepo-com icons"></i>
+                                            <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'tradewind' }} className='btn'>
+                                                <i className="icon-shield-check icons"></i>
                                             </Button>
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-12">
                                         <div className="textBox">
                                             <Typography $fontSize='1.75rem'>
-                                                Make a profile
+                                                {dictionary.appToolsItemTitle_1}
                                             </Typography>
-                                            <Typography $fontSize='1.1rem'>
-                                                We use a customized application tobe
-                                                specifically designed a testing gnose
-                                                to keep away for people.
+                                            <Typography $fontSize='1rem'>
+                                                {dictionary.appToolsItemDesc_1}
                                             </Typography>
                                         </div>
                                         <div className="textBox">
                                             <Typography $fontSize='1.75rem'>
-                                                Download it for Free
+                                                {dictionary.appToolsItemTitle_2}
                                             </Typography>
-                                            <Typography $fontSize='1.1rem'>
-                                                We use a customized application tobe
-                                                specifically designed a testing gnose
-                                                to keep away for people.
+                                            <Typography $fontSize='1rem'>
+                                                {dictionary.appToolsItemDesc_2}
                                             </Typography>
                                         </div>
                                         <div className="textBox">
                                             <Typography $fontSize='1.75rem'>
-                                                Enjoy this App
+                                                {dictionary.appToolsItemTitle_3}
                                             </Typography>
-                                            <Typography $fontSize='1.1rem'>
-                                                We use a customized application tobe
-                                                specifically designed a testing gnose
-                                                to keep away for people.
+                                            <Typography $fontSize='1rem'>
+                                                {dictionary.appToolsItemDesc_3}
                                             </Typography>
                                         </div>
                                     </div>
@@ -79,18 +73,3 @@ function AppTools() {
 export default AppTools
 
 
-//<Button $isCircle={true} $bgColor={{name:"white"}}>hi</Button>
-/*Make a profile
-We use a customized application tobe
-specifically designed a testing gnose
-to keep away for people.
-
-Download it for Free
-We use a customized application tobe
-specifically designed a testing gnose
-to keep away for people.
-
-Enjoy this App
-We use a customized application tobe
-specifically designed a testing gnose
-to keep away for people. */

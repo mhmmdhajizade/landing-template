@@ -12,6 +12,7 @@ export const CommentSec = styled.div`
         .sliderBtn{
             align-items: center;
             display: flex;
+            ${props => props.theme.lang.dictionary["theme.langLabel"]=== "fa" && "flex-direction: row-reverse;"}
         }
         .arrows{
             &:before{

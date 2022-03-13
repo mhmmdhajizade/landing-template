@@ -3,6 +3,7 @@ import React, { Fragment } from 'react'
 import { AppSecLayout } from './style'
 import img from 'assets/img/h5-img-31.png'
 import classNames from 'classnames'
+import { useTheme } from 'styled-components'
 
 
 const data = [
@@ -25,6 +26,10 @@ const data = [
 
 function AppParts() {
 
+    const {lang} = useTheme()
+    const dictionary = lang.dictionary
+
+
     return (
         <Fragment>
             <AppSecLayout as="section">
@@ -35,18 +40,18 @@ function AppParts() {
                                 "flex-row-reverse": index % 2,
                                 "lastRow": index === 2
                             })} key={index}>
-                                <div className="col-lg-6 col-12 imgSec">
+                                <div className="col-lg-6 col-12 imgSec ">
                                     <img alt='' src={img} />
                                 </div>
                                 <div className="col-lg-6 col-12">
-                                    <div className='textBox'>
+                                    <div className='container textBox'>
                                         <Typography $fontSize='40px'>
-                                            The right things
+                                            {dictionary.appSectionsItemTitle_1}
                                         </Typography>
                                         <div className="textSec">
                                             <div className="col-lg-9 col-12">
                                                 <Typography $fontSize='18px'>
-                                                    An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui.
+                                                    {dictionary.appSectionsItemDesc_1}
                                                 </Typography>
                                             </div>
                                         </div>

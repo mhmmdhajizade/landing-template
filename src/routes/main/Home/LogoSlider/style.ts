@@ -7,9 +7,9 @@ type IProps = {
 export const LogoSliderSec = styled.div`
   margin-top: 70px;
   .container-fluid {
-    padding-top: 20px;
+    
     h2 {
-      margin-bottom: 0;
+      
       text-align: center;
     }
   }
@@ -30,7 +30,8 @@ export const LogoSliderSec = styled.div`
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    ${props => props.theme.style.name === "dark" && "bacground-color:#0d0d0d"}
+    ${props => props.theme.style.name === "light" && "bacground-color:#fafafa"}
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;

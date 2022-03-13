@@ -10,8 +10,10 @@ export const FooterSec = styled.div`
     margin-bottom: 100px;
     display: flex;
     .col-lg-4 {
-      .Toggles{
-        margin-left: 10px;
+      .Toggles {
+        ${props => props.theme.lang.dictionary["theme.langLabel"] === "en" && "margin-left: 10px;"}
+        ${props => props.theme.lang.dictionary["theme.langLabel"] === "fa" && "margin-right: 10px;"}
+        
       }
       .bOpqnr {
         background-color: ${(props) => props.theme.style.getColor("white")};
@@ -29,20 +31,24 @@ export const FooterSec = styled.div`
         border-bottom: 1px solid white;
         border-radius: 0;
       }
-      .lastCol {
+      
+    }
+    .lastCol {
         button {
           background-color: #1d1d1f;
           margin-top: 20px;
-          .icon-right-arrow-7351 {
+          .arrow {
             &:before {
               margin-left: 15px;
-              font-size: 2rem;
+              font-size: 1.5rem !important;
               vertical-align: middle;
+              ${(props) =>
+                props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
+                `transform: rotate(180deg);`}
             }
           }
         }
       }
-    }
     img {
       width: 40%;
     }
@@ -66,7 +72,12 @@ export const FooterSec = styled.div`
         border-radius: 50%;
         background-color: #333335;
         margin: 10px;
-        margin-left: 0;
+        ${(props) =>
+          props.theme.lang.dictionary["theme.langLabel"] === "en" &&
+          "margin-left: 0;"}
+        ${(props) =>
+          props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
+          "margin-right: 0;"}
         justify-content: center;
         align-items: center;
         p {

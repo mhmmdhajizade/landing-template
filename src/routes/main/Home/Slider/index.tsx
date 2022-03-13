@@ -22,12 +22,14 @@ const HomeSlider = () => {
                                 <Typography
                                     $textColor={{ name: 'white' }}
                                     $fontSize="0.8rem"
+                                    className="mb-0"
                                 >
                                     {dictionary.sliderSmallTitle}
                                 </Typography>
                                 <Typography
                                     $textColor={{ name: 'white' }}
                                     $fontSize="3rem"
+                                    className="mb-4"
                                 >
                                     {dictionary.sliderMainTitle}
                                 </Typography >

@@ -29,7 +29,6 @@ export const HeaderLay = styled.div`
 export const HeaderWrapepr = styled.div`
   position: relative;
   display: flex;
-  ${props => props.theme.lang.dictionary["theme.langLabel"] === "fa" && "flex-direction: row-reverse;"};
   align-items: center;
   justify-content: space-between;
   width: 100%;

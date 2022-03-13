@@ -5,9 +5,8 @@ export const MarketSec = styled.div`
   text-align: left;
   .container {
       padding-top: 20px;
-    .row{
-      margin-top: 50px;
-    }
+      ${props => props.theme.lang.dictionary["theme.langLabel"] === "fa" && "text-align: right;"}
+    
     .title {
       font-weight: bold;
     }
@@ -15,7 +14,7 @@ export const MarketSec = styled.div`
       text-align: justify;
       img {
         margin: 10px;
-        margin-bottom: 50px;
+        
       }
     }
   }

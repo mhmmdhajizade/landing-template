@@ -1,6 +1,6 @@
 {
   "theme.dir": "ltr",
-  "theme.locale": "en-US",
+  "theme.locale": "en_US",
   "theme.language": "english",
   "theme.langLabel": "en",
   "theme.langPath": "/langs/language_us.png",
@@ -21,101 +21,55 @@
 
   "marketMainTitle": "3Commas helps traders win regardless of market conditions",
   "marketParagraph": "For every market condition, there’s a trading strategy that can profit from it. 3Commas bots happen to be really good at reducing average acquisition costs, directly increasing your profit margins from each trade.",
-  "marketItems": [
-    {
-      "title": "Bear markets",
-      "description": "Use DCA Short bots to borrow and sell tokens at the current price and buy them back at a lower price"
-    },
-    {
-      "title": "Bull markets",
-      "description": "Use DCA Long bots to buy the natural dips and sell the spikes as the price rises over time, achieving a better average entry price for your positions"
-    },
-    {
-      "title": "Sideways markets",
-      "description": "Use Grid bots to pick up cheaper tokens when they hit support levels and sell them when they’re close to resistance levels"
-    }
-  ],
+  "marketItemTitle_1": "Bear markets",
+  "marketItemDesc_1": "Use DCA Short bots to borrow and sell tokens at the current price and buy them back at a lower price",
+  "marketItemTitle_2": "Bull markets",
+  "marketItemDesc_2": "Use DCA Long bots to buy the natural dips and sell the spikes as the price rises over time, achieving a better average entry price for your positions",
+  "marketItemTitle_3": "Sideways markets",
+  "marketItemDesc_3": "Use Grid bots to pick up cheaper tokens when they hit support levels and sell them when they’re close to resistance levels",
 
-  "appSectionsItems": [
-    {
-      "title": "The right things",
-      "description": "An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui."
-    },
-    {
-      "title": "The right things",
-      "description": "An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui."
-    },
-    {
-      "title": "The right things",
-      "description": "An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui."
-    }
-  ],
+  "appSectionsItemTitle_1": "The right things",
+  "appSectionsItemDesc_1": "An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui.",
+  "appSectionsItemTitle_2": "The right things",
+  "appSectionsItemDesc_2": "An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui.",
+  "appSectionsItemTitle_3": "The right things",
+  "appSectionsItemDesc_3": "An gloriatur scripserit nec, porro eleifend ius nec. Sale integre hendrerit ea invenire deseruisse duo definitiones usu cu. Mea vide vocibus qui.",
 
   "appToolsMainTitle": "How does this app works?",
-  "appToolsItems": [
-    {
-      "title": "Make a profile",
-      "description": "We use a customized application tobe specifically designed a testing gnose to keep away for people."
-    },
-    {
-      "title": "Download it for Free",
-      "description": "We use a customized application tobe specifically designed a testing gnose to keep away for people."
-    },
-    {
-      "title": "Enjoy this App",
-      "description": "We use a customized application tobe specifically designed a testing gnose to keep away for people."
-    }
-  ],
+  "appToolsItemTitle_1": "Make a profile",
+  "appToolsItemDesc_1": "We use a customized application tobe specifically designed a testing gnose to keep away for people.",
+  "appToolsItemTitle_2": "Download it for Free",
+  "appToolsItemDesc_2": "We use a customized application tobe specifically designed a testing gnose to keep away for people.",
+  "appToolsItemTitle_3": "Enjoy this App",
+  "appToolsItemDesc_3": "We use a customized application tobe specifically designed a testing gnose to keep away for people.",
 
   "commentSectionSmallTitle": "What our users say about us",
   "commentSectionMainTitle": "Testimonial",
 
   "appFeaturesMainTitle": "Straightforward and quick",
-  "appFeaturesItems": [
-    {
-      "description": "Create portfolios with any coin alocation and rebalance your account with a click."
-    },
-    {
-      "description": "Add multiple accounts to track your portfolio and check your daily PnL."
-    },
-    {
-      "description": "Trade without money. Test strategies safely and without any risk."
-    },
-    {
-      "description": "Accrue additional profit with unexpected market moves. Sell and buy back coins."
-    },
-    {
-      "description": "A simple set of automated strategies to trade options on an exchange."
-    },
-    {
-      "description": "Subscribe to signals provided by other traders to copy strategies."
-    }
-  ],
+  "appFeaturesItem_1": "Create portfolios with any coin alocation and rebalance your account with a click.",
+  "appFeaturesItem_2": "Add multiple accounts to track your portfolio and check your daily PnL.",
+  "appFeaturesItem_3": "Trade without money. Test strategies safely and without any risk.",
+  "appFeaturesItem_4": "Accrue additional profit with unexpected market moves. Sell and buy back coins.",
+  "appFeaturesItem_5": "A simple set of automated strategies to trade options on an exchange.",
+  "appFeaturesItem_6": "Subscribe to signals provided by other traders to copy strategies.",
   "appFeaturesButton": "Sign up for free",
 
   "downloadBoxMainTitle": "Manage your positions in one tap with the 3Commas mobile app",
   "downloadBoxDescription": "Download the mobile application, track strategy statistics, launch bots, and close orders. Whether you’re at home or on the road, manage your positions anywhere.",
-  "downloadBoxAppStoreButton": {
-    "smTitle": "Download on the",
-    "lgTitle": "App Store"
-  },
-  "downloadBoxGooglePlayButton": {
-    "smTitle": "Get it on",
-    "lgTitle": "Google Play"
-  },
+  "downloadBoxAppStoreButtonSmTitle": "Download on the",
+  "downloadBoxAppStoreButtonLgTitle": "App Store",
+  "downloadBoxGooglePlayButtonSmTitle": "Get it on",
+  "downloadBoxGooglePlayButtonLgTitle": "Google Play",
 
   "footerMainTitle": "We do what we love, and we love what we do.",
-  "footerContactTitle":"Office in New York",
+  "footerContactTitle": "Office in New York",
   "footerAddress": "105 Lincoln Avenue Bronx, NY 10454, USA",
-  "footerPhones":{
-    "first": "+ (123) 124-567-8901",
-    "second": "+ (123) 124-567-8901"
-  },
-  "footerEmails" : {
-    "first": "webon@example.com",
-    "second":"webon@example1.com"
-  },
-  "footerNewsTitle":"Newsletter",
-  "footerNewsDesc":"Submit to our newsletter & subscribe to our newsletter to be on the up and up",
-  "footerNewsButton":"Subscribe"
+  "footerPhonesFirst": "+ (123) 124-567-8901",
+  "footerPhonesSecond": "+ (123) 124-567-8901",
+  "footerEmailsFirst": "webon@example.com",
+  "footerEmailsSecond": "webon@example1.com",
+  "footerNewsTitle": "Newsletter",
+  "footerNewsDesc": "Submit to our newsletter & subscribe to our newsletter to be on the up and up",
+  "footerNewsButton": "Subscribe"
 }

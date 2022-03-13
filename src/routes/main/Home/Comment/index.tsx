@@ -1,16 +1,15 @@
-import React, { Fragment, useState } from 'react'
-import { Navigation, A11y } from 'swiper';
+import React, { Fragment, useEffect, useState } from 'react'
+import  SwiperClass, { Navigation, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css/bundle';
+// import 'swiper/css/navigation';
 import { CommentSec } from './style';
 import { Button, Typography } from 'components/HtmlElements';
 import pImage1 from 'assets/img/dowfffnload.png'
 import pImage2 from 'assets/img/download.png'
 import pImage3 from 'assets/img/h5-testimonials-img-1.png'
 import { useTheme } from 'styled-components';
+import classNames from 'classnames';
 
 interface iComments {
     id: number,
@@ -45,7 +44,17 @@ function Comments() {
         }
     ])
     const {lang} = useTheme()
-    const dictionary = lang.dictionary
+    const dictionary = lang.dictionary;
+    
+
+    const _refSwiper = React.useRef<SwiperClass>();
+    useEffect(()=>{
+        if( _refSwiper.current) {
+            _refSwiper.current.rtlTranslate = dictionary['theme.dir'] === "rtl";
+            _refSwiper.current.update();
+        }
+    },[dictionary])
+
     return (
         <Fragment>
             <CommentSec as="section" className='container-fluid'>
@@ -60,30 +69,39 @@ function Comments() {
                             </Typography>
                         </div>
                         <div className='sliderBtn'>
-                            <Button id='p'><i className="icon-left-arrow-7352 arrows"></i></Button>
-                            <Button id='n'><i className="icon-right-arrow-7351 arrows"></i></Button>
+                            <Button
+                             className={classNames({
+                                'p':lang.dictionary['theme.langLabel']==="en",
+                                'n':lang.dictionary['theme.langLabel']==="fa"
+                            })}
+                            >
+                                <i className="icon-left-arrow-7352 arrows"/>
+                            </Button>
+                            <Button 
+                            className={classNames({
+                                'n':lang.dictionary['theme.langLabel']==="en",
+                                'p':lang.dictionary['theme.langLabel']==="fa"
+                            })}
+                            >
+                                <i className="icon-right-arrow-7351 arrows"/>
+                            </Button>
                         </div>
                     </div>
                 </div>
                 <div className="container">
                     <Swiper
+                        onSwiper={swiper=> _refSwiper.current = swiper}
                         modules={[Navigation, A11y]}
                         spaceBetween={0}
                         slidesPerView={1}
                         navigation={{
-                            nextEl: '#n',
-                            prevEl: '#p',
+                            nextEl: '.n',
+                            prevEl: '.p',
                         }}
                         loop
-                        freeMode
-                        scrollbar={{
-                            draggable: true,
-                            hide: true
-                        }}
-                        onSwiper={(swiper) => console.log(swiper)}
                     >
                         {comments.map((item, index) => {
-                            return <SwiperSlide>
+                            return <SwiperSlide key={index}>
                                 <div className='sliderSec'>
                                     <div className="row">
                                         <div className='col-lg-2 col-3'>

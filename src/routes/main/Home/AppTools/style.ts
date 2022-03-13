@@ -10,22 +10,12 @@ export const AppToolsSec = styled.div`
       border-radius: 3px;
       /* background-color: #62adb0; */
       background: hsla(182, 33%, 54%, 1);
-      background: radial-gradient(
-        circle,
-        hsla(182, 33%, 54%, 1) 60%,
-        hsla(0, 0%, 100%, 1) 100%
+      background: linear-gradient(
+        180deg,
+        ${props => props.theme.style.getColor('grey','lighter',0)} 0%,
+        ${props => props.theme.style.getColor('tradewind','darkest')} 50%,
+        ${props => props.theme.style.getColor('grey','lighter',0)} 100%
       );
-      background: -moz-radial-gradient(
-        circle,
-        hsla(182, 33%, 54%, 1) 60%,
-        hsla(0, 0%, 100%, 1) 100%
-      );
-      background: -webkit-radial-gradient(
-        circle,
-        hsla(182, 33%, 54%, 1) 60%,
-        hsla(0, 0%, 100%, 1) 100%
-      );
-      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#62ADB0", endColorstr="#FFFFFF", GradientType=1 );
       margin-left: 30px;
       display: flex;
       flex-direction: column;
@@ -34,6 +24,7 @@ export const AppToolsSec = styled.div`
       .btn {
         position: relative;
         left: -38px;
+        ${props => props.theme.lang.dictionary["theme.langLabel"] === "fa" && "left: 40px;"}
         width: 80px;
         height: 80px;
       }

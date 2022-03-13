@@ -37,7 +37,7 @@ position : relative;
         margin-bottom: 0;
     }
     button{
-        margin-top: 30px;
+        
         width: 70%;
         height: 45px;
     }

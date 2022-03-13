@@ -11,7 +11,7 @@ export const AppFeaturesSec = styled.div`
   }
   .col-lg-4 {
     p {
-      text-align: left;
+      text-align: center;
     }
   }
   button{
