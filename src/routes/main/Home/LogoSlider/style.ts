@@ -6,11 +6,10 @@ type IProps = {
 
 export const LogoSliderSec = styled.div`
   margin-top: 70px;
-  .container-fluid {
-    
+  .container {
     h2 {
-      
-      text-align: center;
+      text-align:left;
+      margin-bottom: 40px;
     }
   }
   .swiper {
@@ -19,9 +18,6 @@ export const LogoSliderSec = styled.div`
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    .swiper-wrapper {
-      align-items: center;
-    }
   }
   .swiper-scrollbar {
     display: none;
@@ -29,24 +25,36 @@ export const LogoSliderSec = styled.div`
 
   .swiper-slide {
     text-align: center;
+    height: 100%;
     font-size: 18px;
-    ${props => props.theme.style.name === "dark" && "bacground-color:#0d0d0d"}
-    ${props => props.theme.style.name === "light" && "bacground-color:#fafafa"}
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    ${(props) =>
+      props.theme.style.name === "dark" &&
+      `bacground-color: ${props.theme.style.getColor("dark")};`}
+    ${(props) =>
+      props.theme.style.name === "light" &&
+      `bacground-color: ${props.theme.style.getColor("light")};`} 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px;
+      border-color: rgb(219,219,219,1);
+      overflow: visible;
+      img{
+        margin-bottom: 80px;
+        margin-top: 80px;
+      }
+      div{
+        text-align: left;
+        padding-left: 40px;
+        padding-bottom: 40px;
+      }
   }
 `;
 export const LogoImg = styled.img<Partial<IProps>>`
   display: block;
-  ${(props) => (props.$width ? "width:" + props.$width : "width:70%")};
-  ${(props) => (props.$height ? "height:" + props.$height : "height:70%")};
+  ${(props) => (props.$width ? "width:" + props.$width : "width:60%")};
+  ${(props) => (props.$height ? "height:" + props.$height : "height:60%")};
   margin: 0.5rem 0 1rem;
   object-fit: cover;
 `;

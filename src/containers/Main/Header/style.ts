@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 export const HeaderSec = styled.header`
+  
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
-  border-color: ${props => props.theme.style.getColor("primary" , "darker")};
-  position: relative;
+  border-color: ${props => props.theme.style.getColor("grey" , "darker")};
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
   width: 100%;
   vertical-align: top;
   height: 101px;
-  z-index: 100;
   box-sizing: border-box;
+  z-index: 100;
 `;
 export const HeaderLay = styled.div`
-  background-color: ${props => props.theme.style.getColor("primary")};
+  
   position: relative;
   display: flex;
   align-items: center;
@@ -25,6 +28,7 @@ export const HeaderLay = styled.div`
   border: 0;
   outline: 0;
   box-sizing: border-box;
+  z-index: 0;
 `;
 export const HeaderWrapepr = styled.div`
   position: relative;
@@ -40,6 +44,7 @@ export const HeaderWrapepr = styled.div`
   border: 0;
   outline: 0;
   box-sizing: border-box;
+  z-index: 2;
   Button {
     position: relative;
     height: 100%;

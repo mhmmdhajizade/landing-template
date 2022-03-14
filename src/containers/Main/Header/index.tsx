@@ -10,6 +10,7 @@ const HeaderPanel = () => {
     const {lang} = useTheme()
     const dictionary = lang.dictionary
     
+    
     return (
         <Fragment>
             <HeaderSec>

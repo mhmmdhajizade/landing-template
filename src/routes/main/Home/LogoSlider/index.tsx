@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import SwiperClass , { Navigation, A11y, Autoplay } from 'swiper';
+import SwiperClass, { Navigation, A11y, Autoplay } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import logo1light from 'assets/img/light/audi-14.svg'
@@ -40,13 +40,13 @@ interface iImages {
 
 function LogoSlider() {
     const [images, setimages] = useState<iImages[]>([])
-    const { lang , style} = useTheme()
+    const { lang, style } = useTheme()
     const dictionary = lang.dictionary
 
     const _refSwiper = React.useRef<SwiperClass>();
 
     useEffect(() => {
-        if( _refSwiper.current) {
+        if (_refSwiper.current) {
             _refSwiper.current.rtlTranslate = dictionary['theme.dir'] === "rtl";
             _refSwiper.current.update();
         }
@@ -98,7 +98,7 @@ function LogoSlider() {
                 },
             ])
         }
-        else{
+        else {
             setimages([
                 {
                     index: 0,
@@ -148,30 +148,33 @@ function LogoSlider() {
         }
 
 
-    }, [style.name , dictionary])
+    }, [style.name, dictionary])
 
     return (
         <Fragment>
             <LogoSliderSec as="section" className='pt-3'>
-                <div className='container-fluid text-center mb-3'>
-                    <Typography as="h2">{dictionary.logoSectionTitle}</Typography>
+                <div className='container text-center mb-3'>
+                    <Typography as="h2">Trusted the world over</Typography>
                 </div>
                 <div className="container">
                     <Swiper
                         modules={[Navigation, A11y, Autoplay]}
                         spaceBetween={0}
-                        slidesPerView={6}
+                        slidesPerView={5}
                         autoplay={{
                             delay: 2000,
                             disableOnInteraction: false,
                         }}
                         loop
                         freeMode
-                        onSwiper={swiper=> _refSwiper.current = swiper}
+                        onSwiper={swiper => _refSwiper.current = swiper}
                     >
                         {images.map((item, index) => {
                             return <SwiperSlide key={index}>
                                 <LogoImg alt='' src={item.url} $height={item.height ? item.height : undefined} $width={item.width ? item.width : undefined} />
+                                <div className="container">
+                                    <p>jhbch</p>
+                                </div>
                             </SwiperSlide>
                         })}
                     </Swiper>

@@ -10,6 +10,7 @@ background-color : ${props => props.theme.style.getColor("primary" )};
 align-items: center;
 width: 100%;
 display: flex;
+padding-top: 100px;
 position : relative;
 .container{
     padding-top: 50px;
