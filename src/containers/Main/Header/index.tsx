@@ -4,8 +4,12 @@ import logo from 'assets/img/logo-light-img-1-1.png'
 import { HeaderLay, HeaderSec, HeaderWrapepr, Logo, LogoSec, Menusec, Navbar, NavItems, SignSec } from "./style";
 import { useTheme } from "styled-components";
 
-
-const HeaderPanel = () => {
+export interface IHeaderProps {
+    headerProps : {
+        color : "black" | "white"
+    }
+}
+const HeaderPanel = ({headerProps} : IHeaderProps) => {
 
     const {lang} = useTheme()
     const dictionary = lang.dictionary
@@ -14,8 +18,8 @@ const HeaderPanel = () => {
     return (
         <Fragment>
             <HeaderSec>
-                <HeaderLay className="container-fluid">
-                    <HeaderWrapepr>
+                <HeaderLay className="container-fluid" >
+                    <HeaderWrapepr >
                         <LogoSec>
                             <Logo alt="" src={logo} />
                         </LogoSec>

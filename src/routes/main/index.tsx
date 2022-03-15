@@ -1,10 +1,25 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Header from "containers/Main/Header";
+import Header, { IHeaderProps } from "containers/Main/Header";
 import Footer from "containers/Main/Footer";
 import Home from "./Home";
-import { controller } from "constants/defaultValues";
+// import { controller } from "constants/defaultValues";
+import AboutUs from "./AboutUs";
+import NotFound from "./Error";
+import ContactUs from "./ContactUs";
+import FaqPage from "./FAQ";
+import ErrorRoute from "routes/error";
+import OurServices from "./OurServices";
+
 const MainRoute = () => {
+
+    const [header,setHeader] = useState<IHeaderProps['headerProps']>({
+        color : "black"
+    });
+
+    const _fn = (headerProps:IHeaderProps['headerProps'])=>{
+        setHeader(headerProps)
+    }
 
     // useEffect(()=>{
     //     const _controller = controller({
@@ -30,17 +45,22 @@ const MainRoute = () => {
 
     // },[])
     return (
-        <Routes>
-            <Route path="/" element={
+            <Routes>
+                <Route path={"/"} element={
                 <Fragment>
-                    <Header />
+                    <Header headerProps={header}/>
                     <Outlet />
                     <Footer />
-                </Fragment>
-            }>
-                <Route path="/" element={<Home />} />
-            </Route>
-        </Routes>
+                </Fragment>} >
+                    <Route index element={<Home />} />
+                    <Route path="AboutUs" element={<AboutUs callbackHeader={_fn}/>} />
+                    <Route path="NotFound" element={<NotFound />} />
+                    <Route path="ContactUs" element={<ContactUs />} />
+                    <Route path="FAQ" element={<FaqPage />} />
+                    <Route path="ourservices" element={<OurServices />} />
+                </Route>
+                <Route element={<ErrorRoute />} />
+            </Routes>
     )
 }
 

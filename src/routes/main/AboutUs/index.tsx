@@ -1,18 +1,37 @@
-import React, { Fragment } from 'react'
+import { IHeaderProps } from 'containers/Main/Header'
+import React, { Fragment, useEffect } from 'react'
 import LogoSlider from '../Home/LogoSlider'
 import Awards from './Awards'
 import CompanyParts from './CompanyParts'
 import MainSlider from './MainSlider'
 import Slider from './SecondSlider'
 
-function AboutUs() {
+interface IProps {
+  callbackHeader?: (headerProps: IHeaderProps['headerProps']) => void
+}
+function AboutUs({ callbackHeader }: IProps) {
+
+  useEffect(() => {
+    if(callbackHeader){
+      callbackHeader({
+        color: "black",
+      })
+    }
+    return()=>{
+      if(callbackHeader){
+        callbackHeader({
+          color: "black",
+        })
+      }
+    }
+  }, [])
   return (
     <Fragment>
-        <MainSlider />
-        <Awards />
-        <CompanyParts />
-        <Slider  />
-        <LogoSlider />
+      <MainSlider />
+      <Awards />
+      <CompanyParts />
+      <Slider />
+      <LogoSlider />
     </Fragment>
   )
 }

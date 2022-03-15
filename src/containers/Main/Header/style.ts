@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const HeaderSec = styled.header`
+type IProps = {
+  $textColor : "black" | "white",
+}
+
+export const HeaderSec = styled.header<Partial<IProps>>`
   
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
