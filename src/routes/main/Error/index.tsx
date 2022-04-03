@@ -1,9 +1,30 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { NotFoundSec } from './style'
 import img from 'assets/img/NotFound/p11-img-1.png'
 import { Button, Typography } from 'components/HtmlElements'
+import { IHeaderProps } from 'containers/Main/Header'
 
-function NotFound() {
+interface IProps {
+    callbackHeader?: (headerProps: IHeaderProps['headerProps']) => void
+  }
+
+function NotFound({ callbackHeader }: IProps) {
+
+    useEffect(() => {
+        if(callbackHeader){
+          callbackHeader({
+            color: "black",
+          })
+        }
+        return()=>{
+          if(callbackHeader){
+            callbackHeader({
+              color: "white",
+            })
+          }
+        }
+      }, [])
+      
     return (
         <Fragment>
             <NotFoundSec as="section" className='container-fluid'>

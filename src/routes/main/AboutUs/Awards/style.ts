@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AwardsSec = styled.div`
     margin-top: 120px;
+    margin-bottom: 120px;
   .picSec {
       display: flex;
       align-items: center;

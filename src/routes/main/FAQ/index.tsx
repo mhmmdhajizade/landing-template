@@ -1,10 +1,30 @@
 import { Button, Typography } from 'components/HtmlElements'
 import { Input } from 'components/HtmlElements/Form'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import image from 'assets/img/p9-img-1-300x256.jpg'
 import { FaqPageSec } from './style'
+import { IHeaderProps } from 'containers/Main/Header'
 
-function FaqPage() {
+interface IProps {
+    callbackHeader?: (headerProps: IHeaderProps['headerProps']) => void
+  }
+
+function FaqPage({ callbackHeader }: IProps) {
+
+    useEffect(() => {
+        if(callbackHeader){
+          callbackHeader({
+            color: "black",
+          })
+        }
+        return()=>{
+          if(callbackHeader){
+            callbackHeader({
+              color: "white",
+            })
+          }
+        }
+      }, [])
 
     const [questions, setQuestions] = useState([
         {

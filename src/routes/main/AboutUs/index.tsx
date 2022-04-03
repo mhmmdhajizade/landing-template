@@ -14,13 +14,13 @@ function AboutUs({ callbackHeader }: IProps) {
   useEffect(() => {
     if(callbackHeader){
       callbackHeader({
-        color: "black",
+        color: "white",
       })
     }
     return()=>{
       if(callbackHeader){
         callbackHeader({
-          color: "black",
+          color: "white",
         })
       }
     }

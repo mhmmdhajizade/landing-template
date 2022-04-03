@@ -1,6 +1,7 @@
 import { Button } from "components/HtmlElements";
 import { Fragment } from "react";
-import logo from 'assets/img/logo-light-img-1-1.png'
+import logoLight from 'assets/img/logo-light-img-1-1.png'
+import logoDark from 'assets/img/logo-dark-img-1.png'
 import { HeaderLay, HeaderSec, HeaderWrapepr, Logo, LogoSec, Menusec, Navbar, NavItems, SignSec } from "./style";
 import { useTheme } from "styled-components";
 
@@ -21,14 +22,14 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                 <HeaderLay className="container-fluid" >
                     <HeaderWrapepr >
                         <LogoSec>
-                            <Logo alt="" src={logo} />
+                            <Logo alt="" src={headerProps.color === "black" ? logoDark  : logoLight} />
                         </LogoSec>
                         <Menusec>
                             <Navbar>
                                 <NavItems>
                                     <Button
                                         $textColor={{
-                                            name: "white"
+                                            name: headerProps.color
                                         }}
                                     >
                                         {dictionary.navitem1}
@@ -37,7 +38,7 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                                 <NavItems>
                                     <Button
                                         $textColor={{
-                                            name: "white"
+                                            name: headerProps.color
                                         }}
                                    
                                     >
@@ -47,7 +48,7 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                                 <NavItems>
                                     <Button
                                         $textColor={{
-                                            name: "white"
+                                            name: headerProps.color
                                         }}
                                     >
                                         {dictionary.navitem3}
@@ -59,7 +60,7 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                             
                             <Button
                                 $textColor={{
-                                    name: "white"
+                                    name: headerProps.color
                                 }}
                              >
                                  <i className="icon-a6b6b86303967e34e75d4e2d9f9c810c" />
@@ -67,7 +68,7 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                             </Button>
                             <Button
                                 $textColor={{
-                                    name: "white"
+                                    name: headerProps.color
                                 }}
                              
                             >
