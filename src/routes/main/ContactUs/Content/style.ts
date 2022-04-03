@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const ContentSec = styled.div`
-  margin-top: 100px;
-  padding-top: 70px;
-  padding-bottom: 50px;
+
   .col-lg-6 {
     img {
       width: 80%;
@@ -12,9 +10,12 @@ export const ContentSec = styled.div`
       margin-top: 30px;
     }
   }
+  .inf{
+    padding-top: 15px;
+  }
   .formSec {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     .formTitle {
       margin-bottom: 20px;
     }

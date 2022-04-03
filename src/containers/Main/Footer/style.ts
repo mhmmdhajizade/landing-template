@@ -13,7 +13,11 @@ export const FooterSec = styled.div`
       .Toggles {
         ${props => props.theme.lang.dictionary["theme.langLabel"] === "en" && "margin-left: 10px;"}
         ${props => props.theme.lang.dictionary["theme.langLabel"] === "fa" && "margin-right: 10px;"}
-        
+        padding: 10px;
+      }
+      .lanToggles{
+        padding-left: 15px;
+        padding-right: 15px;
       }
       .bOpqnr {
         background-color: ${(props) => props.theme.style.getColor("white")};

@@ -13,12 +13,12 @@ function AppTools() {
         <Fragment>
             <AppToolsSec as="section" className='container-fluid'>
                 <div className="container">
-                    <div className="row">
+                    <div className="row layout">
                         <div className="col-lg-6 col-12">
                             <img alt='' src={image} />
                         </div>
                         <div className="col-lg-6 col-12">
-                            <Typography $fontSize='2rem' className='mainTitle'>{dictionary.appToolsMainTitle}</Typography>
+                            <Typography $fontSize='2rem' className='mainTitle mb-5'>{dictionary.appToolsMainTitle}</Typography>
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className="col-lg-2 col-12">
@@ -35,7 +35,7 @@ function AppTools() {
                                         </div>
                                     </div>
                                     <div className="col-lg-10 col-12">
-                                        <div className="textBox">
+                                        <div className="textBox ">
                                             <Typography $fontSize='1.75rem'>
                                                 {dictionary.appToolsItemTitle_1}
                                             </Typography>
@@ -43,7 +43,7 @@ function AppTools() {
                                                 {dictionary.appToolsItemDesc_1}
                                             </Typography>
                                         </div>
-                                        <div className="textBox">
+                                        <div className="textBox ">
                                             <Typography $fontSize='1.75rem'>
                                                 {dictionary.appToolsItemTitle_2}
                                             </Typography>
@@ -51,7 +51,7 @@ function AppTools() {
                                                 {dictionary.appToolsItemDesc_2}
                                             </Typography>
                                         </div>
-                                        <div className="textBox">
+                                        <div className="textBox ">
                                             <Typography $fontSize='1.75rem'>
                                                 {dictionary.appToolsItemTitle_3}
                                             </Typography>

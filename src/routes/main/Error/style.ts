@@ -6,7 +6,6 @@ export const NotFoundSec = styled.div`
     margin-bottom: -70px;
     .container{
         padding-top: 100px;
-        padding-bottom: 100px;
         img{
             width: 100%;
         }
@@ -14,14 +13,13 @@ export const NotFoundSec = styled.div`
             display: flex;
             align-items: center;
             .smText{
-                margin-bottom: -5px;
+                margin-bottom: -10px;
                 letter-spacing: 3px;
             }
             .description{
                 padding-right: 85px;
             }
             button{
-                margin-top: 30px;
                 padding: 10px 50px;
             }
         }

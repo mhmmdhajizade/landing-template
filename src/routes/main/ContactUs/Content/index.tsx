@@ -7,9 +7,9 @@ import { Input } from 'components/HtmlElements/Form'
 function Content() {
   return (
     <Fragment>
-      <ContentSec as="section" className='container'>
+      <ContentSec as="section" className='container mt-5 mb-5 pt-5'>
         <div className="row">
-          <div className="col-lg-6 col-12">
+          <div className="col-lg-6 col-12 inf">
             <img alt='' src={img} />
             <div className='contactData'>
               <Typography $fontSize='1.5rem'>
@@ -29,10 +29,10 @@ function Content() {
           <div className="col-lg-6 col-12 formSec">
             <div className="formBox">
               <div className="formTitle">
-                <Typography $fontSize='3rem'>
+                <Typography $fontSize='3rem' className='mb-3'>
                   Post a Comment
                 </Typography>
-                <Typography $fontSize='1.1rem'>
+                <Typography $fontSize='1.1rem' className='mb-5'>
                   Ne vim tamquam verterem elaboraret, delectus senserit conceptam ut sed, nec sanctus consulatu no, sea alterum.
                 </Typography>
               </div>

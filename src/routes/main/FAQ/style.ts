@@ -3,8 +3,8 @@ import styled, { keyframes } from "styled-components";
 
 export const FaqPageSec = styled.div`
   .mainSlide {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 180px;
+    padding-bottom: 80px;
     background-color: ${(props) => props.theme.style.getColor("grey")};
   }
   .contentSection {
@@ -44,10 +44,7 @@ export const FaqPageSec = styled.div`
         }
       }
       .categories {
-        padding-top: 50px;
-        p {
-          margin-bottom: 30px;
-        }
+        
         .category{
             p{
                 letter-spacing: 3px;
@@ -57,8 +54,7 @@ export const FaqPageSec = styled.div`
       .banner{
           img{
               margin-bottom: 60px;
-              margin-top: 15px;
-              width: 100%;
+                width: 100%;
           }
       }
     }

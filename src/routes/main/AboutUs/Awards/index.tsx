@@ -20,7 +20,7 @@ function Awards() {
               <div className="container">
                 <div className="textBox">
                   <div className="title">
-                    <Typography $fontSize='3rem' >
+                    <Typography $fontSize='3rem' className='mb-3' >
                       Award winning app for delivery
                     </Typography>
                   </div>
@@ -32,7 +32,7 @@ function Awards() {
                         </Typography>
                       </div>
                       <div className="col-lg-9 col-12">
-                        <Typography $fontSize='1.1rem' className='mb-4'>
+                        <Typography $fontSize='1.1rem' className='mb-5'>
                           Vivamus lacinia tempus rutrum nulla velit maximus consectetur, gravida tellus nibh faucibus euismod nisi curabitur.
                         </Typography>
                         <Button>

@@ -126,11 +126,11 @@ function FaqPage({ callbackHeader }: IProps) {
 
     return (
         <Fragment>
-            <FaqPageSec as="section">
+            <FaqPageSec as="section" >
                 <div className="container-fluid mainSlide">
                     <div className="container">
                         <div className="col-lg-4 col-12">
-                            <Typography $fontSize='4rem'>
+                            <Typography $fontSize='4rem' className='mb-3'>
                                 FAQ Page
                             </Typography>
                             <Typography $fontSize='1.1rem'>
@@ -140,7 +140,7 @@ function FaqPage({ callbackHeader }: IProps) {
                         </div>
                     </div>
                 </div>
-                <div className="container contentSection">
+                <div className="container contentSection mt-5">
                     <div className="row">
                         <div className="col-lg-9 col-9">
                             {questions.map((question, index) => {
@@ -161,23 +161,23 @@ function FaqPage({ callbackHeader }: IProps) {
                         </div>
                         <div className="col-lg-3 col-3">
                             <div className="searchBox">
-                                <div className="searchInp">
+                                <div className="searchInp mb-5">
                                     <Input type="search" placeholder='Type your serch' />
                                     <Button><i className='icon-search' /></Button>
                                 </div>
                             </div>
                             <div className="categories">
-                                <Typography $fontSize='1.5rem'>Categories</Typography>
+                                <Typography $fontSize='1.5rem' className='mb-3'>Categories</Typography>
                                 {categories.map((category, index) => {
-                                    return <div className='category'>
+                                    return <div className='category mb-2'>
                                         <Typography $fontSize='0.7rem'>{`${category.name} (${category.count})`}</Typography>
                                     </div>
                                 })}
                             </div>
                             <div className="banner">
-                                <Typography $fontSize='1.5rem'>Place your banner</Typography>
-                                <img src={image} alt="" />
-                                <Typography $fontSize='1.5rem'>
+                                <Typography $fontSize='1.5rem' className='mt-4 mb-5'>Place your banner</Typography>
+                                <img src={image} alt="" className='mb-5' />
+                                <Typography $fontSize='1.5rem' className='mb-3'>
                                     Why we are here?
                                 </Typography>
                                 <Typography $fontSize='1.1rem'>

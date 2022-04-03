@@ -1,30 +1,47 @@
 import { Button } from "components/HtmlElements";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import logoLight from 'assets/img/logo-light-img-1-1.png'
 import logoDark from 'assets/img/logo-dark-img-1.png'
 import { HeaderLay, HeaderSec, HeaderWrapepr, Logo, LogoSec, Menusec, Navbar, NavItems, SignSec } from "./style";
 import { useTheme } from "styled-components";
 
 export interface IHeaderProps {
-    headerProps : {
-        color : "black" | "white"
+    headerProps: {
+        color: "black" | "white"
     }
 }
-const HeaderPanel = ({headerProps} : IHeaderProps) => {
+const HeaderPanel = ({ headerProps }: IHeaderProps) => {
+    var headerEl = document.getElementById('header')
+    var headerLay = document.getElementById('headerLay')
+    const scrollFn: () => void = () => {
+        if (headerEl && headerLay) {
+            if (window.pageYOffset > 120) {
+                headerEl.classList.add("sticky");
+                headerLay.style.backgroundColor = style.getColor("primary")
+            } else {
+                headerEl.classList.remove("sticky");
+                headerLay.style.backgroundColor = ""
+            }
+        }
+    }
 
-    const {lang} = useTheme()
+    const { lang ,style } = useTheme()
     const dictionary = lang.dictionary
-    
-    
+
+    useEffect(() => {
+        window.onscroll = function () { scrollFn() }
+    })
+
+
     return (
         <Fragment>
-            <HeaderSec>
-                <HeaderLay className="container-fluid" >
+            <HeaderSec id="header">
+                <HeaderLay id="headerLay" className="container-fluid" >
                     <HeaderWrapepr >
-                        <LogoSec>
-                            <Logo alt="" src={headerProps.color === "black" ? logoDark  : logoLight} />
+                        <LogoSec className="col-lg-1">
+                            <Logo alt="" src={headerProps.color === "black" ? logoDark : logoLight} />
                         </LogoSec>
-                        <Menusec>
+                        <Menusec className="col-lg-9">
                             <Navbar>
                                 <NavItems>
                                     <Button
@@ -40,7 +57,7 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                                         $textColor={{
                                             name: headerProps.color
                                         }}
-                                   
+
                                     >
                                         {dictionary.navitem2}
                                     </Button>
@@ -56,23 +73,22 @@ const HeaderPanel = ({headerProps} : IHeaderProps) => {
                                 </NavItems>
                             </Navbar>
                         </Menusec>
-                        <SignSec>
-                            
+                        <SignSec className="col-lg-2">
                             <Button
                                 $textColor={{
                                     name: headerProps.color
                                 }}
-                             >
-                                 <i className="icon-a6b6b86303967e34e75d4e2d9f9c810c" />
+                            >
+                                <i className="icon-a6b6b86303967e34e75d4e2d9f9c810c" />
                                 {dictionary.signup}
                             </Button>
                             <Button
                                 $textColor={{
                                     name: headerProps.color
                                 }}
-                             
+
                             >
-                                <i className="icon-login"/>
+                                <i className="icon-login" />
                                 {dictionary.signin}
                             </Button>
                         </SignSec>

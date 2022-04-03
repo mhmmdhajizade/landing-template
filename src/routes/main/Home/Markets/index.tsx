@@ -13,7 +13,7 @@ function Markets() {
 
     return (
         <Fragment>
-            <MarketSec as="section" className='container-fluid pb-4 '>
+            <MarketSec as="section" className='container-fluid mt-5 mb-5'>
                 <div className='container'>
                     <Typography $fontSize='48px' className='title mb-3'>
                         {dictionary.marketMainTitle}
@@ -23,8 +23,8 @@ function Markets() {
                     </Typography>
                     <div className="row mt-5">
                         <div className="market col-lg-4 col-12">
-                            <img alt='' src={img1} className='mb-3'/>
-                            <Typography $fontSize='30px' className='mt-3'>
+                            <img alt='' src={img1} className='mb-5'/>
+                            <Typography $fontSize='30px' className='mb-3'>
                                 {dictionary.marketItemTitle_1}
                             </Typography>
                             <Typography $fontSize='18px'>
@@ -32,8 +32,8 @@ function Markets() {
                             </Typography>
                         </div>
                         <div className="market col-lg-4 col-12">
-                            <img alt='' src={img2} className='mb-3'/>
-                            <Typography $fontSize='30px' className='mt-3'>
+                            <img alt='' src={img2} className='mb-5'/>
+                            <Typography $fontSize='30px' className='mb-3'>
                                 {dictionary.marketItemTitle_2}
                             </Typography>
                             <Typography $fontSize='18px'>
@@ -41,8 +41,8 @@ function Markets() {
                             </Typography>
                         </div>
                         <div className="market col-lg-4 col-12">
-                            <img alt='' src={img3} className='mb-3'/>
-                            <Typography $fontSize='30px' className='mt-3'>
+                            <img alt='' src={img3} className='mb-5'/>
+                            <Typography $fontSize='30px' className='mb-3'>
                                 {dictionary.marketItemTitle_3}
                             </Typography>
                             <Typography $fontSize='18px'>

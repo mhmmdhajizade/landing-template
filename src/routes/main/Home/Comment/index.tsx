@@ -57,14 +57,14 @@ function Comments() {
 
     return (
         <Fragment>
-            <CommentSec as="section" className='container-fluid'>
+            <CommentSec as="section" className='container-fluid  mt-5 mb-5'>
                 <div className="container">
                     <div className='header'>
                         <div>
                             <Typography>
                                 {dictionary.commentSectionSmallTitle}
                             </Typography>
-                            <Typography $fontSize='3rem'>
+                            <Typography $fontSize='3rem' className='mb-5'>
                                 {dictionary.commentSectionMainTitle}
                             </Typography>
                         </div>
@@ -108,7 +108,7 @@ function Comments() {
                                             <img alt='' src={item.image} />
                                         </div>
                                         <div className='col-lg-10 col-9'>
-                                            <Typography className='commentText' $fontSize='1.5rem'>
+                                            <Typography className='commentText mb-5' $fontSize='1.5rem' >
                                                 {item.commentText}
                                             </Typography>
                                             <div className='userDetail'>

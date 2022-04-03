@@ -5,7 +5,6 @@ type IProps = {
 }
 
 export const HeaderSec = styled.header<Partial<IProps>>`
-  
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
   border-color: ${props => props.theme.style.getColor("grey" , "darker")};
@@ -92,6 +91,7 @@ export const Menusec = styled.nav`
   text-align: center;
   box-sizing: border-box;
   justify-content: center;
+  padding-left: 80px;
 `;
 export const Navbar = styled.ul`
   position: relative;

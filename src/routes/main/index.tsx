@@ -53,11 +53,11 @@ const MainRoute = () => {
                     <Footer />
                 </Fragment>} >
                     <Route index element={<Home />} />
-                    <Route path="AboutUs" element={<AboutUs callbackHeader={_fn}/>} />
-                    <Route path="NotFound" element={<NotFound callbackHeader={_fn}/>} />
-                    <Route path="ContactUs" element={<ContactUs callbackHeader={_fn}/>} />
+                    <Route path="about-us" element={<AboutUs callbackHeader={_fn}/>} />
+                    <Route path="404" element={<NotFound callbackHeader={_fn}/>} />
+                    <Route path="contact-us" element={<ContactUs callbackHeader={_fn}/>} />
                     <Route path="FAQ" element={<FaqPage callbackHeader={_fn} />} />
-                    <Route path="ourservices" element={<OurServices callbackHeader={_fn} />} />
+                    <Route path="services" element={<OurServices callbackHeader={_fn} />} />
                 </Route>
                 <Route element={<ErrorRoute />} />
             </Routes>

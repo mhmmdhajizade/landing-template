@@ -7,8 +7,7 @@ export const AppFeaturesSec = styled.div`
   padding-bottom: 30px;
   text-align: center;
   img {
-    margin: 30px;
-  }
+    }
   .col-lg-4 {
     p {
       text-align: center;

@@ -28,8 +28,9 @@ const HomeSlider = () => {
                                 </Typography>
                                 <Typography
                                     $textColor={{ name: 'white' }}
+                                    $fontWeight={20}
                                     $fontSize="3rem"
-                                    className="mb-4"
+                                    className="mb-5 MainTitle"
                                 >
                                     {dictionary.sliderMainTitle}
                                 </Typography >

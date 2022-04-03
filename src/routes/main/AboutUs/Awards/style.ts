@@ -12,6 +12,7 @@ export const AwardsSec = styled.div`
         display: flex;
         margin-right: 90px;
         align-items: center;
+        padding-top: 20px;
     }
     .mainImg {
       width: 100%;
@@ -33,6 +34,7 @@ export const AwardsSec = styled.div`
                   font-size: 34px;
                   display: flex;
                   align-items: center;
+                  margin-left: 1rem;
               }
           }
       }

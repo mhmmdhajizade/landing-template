@@ -18,23 +18,23 @@ function AppFeatures() {
         <Fragment>
             <AppFeaturesSec as="section" className="container-fluid">
                 <div className="container">
-                    <Typography $fontSize='2.5rem'>{dictionary.appFeaturesMainTitle}</Typography>
+                    <Typography $fontSize='2.5rem' className='mt-5 mb-5'>{dictionary.appFeaturesMainTitle}</Typography>
                     <div className="row">
                         <div className="col-lg-4 col-12">
-                            <img alt='' src={image1} />
-                            <Typography $fontSize="1.2rem">
+                            <img alt='' src={image1} className='mb-2'/>
+                            <Typography $fontSize="1.2rem" className='mb-3'>
                                 {dictionary.appFeaturesItem_1}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <img alt='' src={image2} />
-                            <Typography $fontSize="1.2rem">
+                            <img alt='' src={image2} className='mb-2'/>
+                            <Typography $fontSize="1.2rem" className='mb-3'>
                                 {dictionary.appFeaturesItem_2}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <img alt='' src={image3} />
-                            <Typography $fontSize="1.2rem">
+                            <img alt='' src={image3} className='mb-2'/>
+                            <Typography $fontSize="1.2rem" className='mb-3'>
                                 {dictionary.appFeaturesItem_3}
                             </Typography>
                         </div>
@@ -43,26 +43,26 @@ function AppFeatures() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 col-12">
-                            <img alt='' src={image4} />
-                            <Typography $fontSize="1.2rem">
+                            <img alt='' src={image4} className='mb-2'/>
+                            <Typography $fontSize="1.2rem" className='mb-3'>
                                 {dictionary.appFeaturesItem_4}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <img alt='' src={image5} />
-                            <Typography $fontSize="1.2rem">
+                            <img alt='' src={image5} className='mb-2'/>
+                            <Typography $fontSize="1.2rem" className='mb-3'>
                                 {dictionary.appFeaturesItem_5}
                             </Typography>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <img alt='' src={image6} />
-                            <Typography $fontSize="1.2rem">
+                            <img alt='' src={image6} className='mb-2'/>
+                            <Typography $fontSize="1.2rem" className='mb-3'>
                                 {dictionary.appFeaturesItem_6}
                             </Typography>
                         </div>
                     </div>
                 </div>
-                <Button $bgColor={{ name: "primary"}} $textColor={{name: "white"}} $sizing='lg'>{dictionary.appFeaturesButton}</Button>
+                <Button $bgColor={{ name: "primary"}} $textColor={{name: "white"}} $sizing='lg' className='mt-4'>{dictionary.appFeaturesButton}</Button>
             </AppFeaturesSec>
         </Fragment>
     )

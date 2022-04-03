@@ -8,6 +8,9 @@ export const AppSecLayout = styled.div`
   margin-top: 70px;
   position: relative;
   padding-bottom: 100px;
+  .container{
+    padding-top: 100px;
+  }
   &:after {
     content: "";
     width: 100%;
@@ -22,6 +25,7 @@ export const AppSecLayout = styled.div`
   }
   .textBox{
     margin-left: 50px;
+    padding-top: 0;
   }
   .mainRow {
     align-items: center;
@@ -32,7 +36,5 @@ export const AppSecLayout = styled.div`
   .imgSec {
     text-align: center;
   }
-  .container{
-    padding-top: 100px;
-  }
+  
 `;

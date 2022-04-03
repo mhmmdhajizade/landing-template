@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const AppToolsSec = styled.div`
   margin-top: 70px;
+  .container{
+    .layout{
+      display: flex;
+      align-items: center;
+    }
+  }
   .col-lg-6 {
     padding: 10px;
     .line {

@@ -29,12 +29,12 @@ function NotFound({ callbackHeader }: IProps) {
         <Fragment>
             <NotFoundSec as="section" className='container-fluid'>
                 <div className="container">
-                    <div className="row">
+                    <div className="row pt-5 pb-5">
                         <div className="col-lg-6 col-12 textSection">
                             <div className='textBox'>
                                 <Typography className='smText' $fontSize='0.7rem'>SORRY, THE PAGE NOT FOUND</Typography>
-                                <Typography $fontSize='4rem'>Error page 404</Typography>
-                                <Typography $fontSize='1.2rem' className='description'>
+                                <Typography $fontSize='4rem' className='mb-3'>Error page 404</Typography>
+                                <Typography $fontSize='1.2rem' className='description mb-5'>
                                     The page you are looking for doesn't exist. Please try searching for some other page, or return to the website's homepage to find what you're looking for.
                                 </Typography>
                                 <Button $bgColor={{ name:'black'}} $textColor={{name: 'white'}}>Back to home</Button>

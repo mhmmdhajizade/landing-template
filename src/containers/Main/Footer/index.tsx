@@ -78,7 +78,7 @@ const FooterPanel = () => {
                                 <i className="icon-sun-29" />
                             </Button> */}
                             <Button
-                                className="Toggles"
+                                className="Toggles lanToggles"
                                 $textColor={{ name: "white" }}
                                 $isCircle
                                 $bgColor={{ name: "lightgrey" }}

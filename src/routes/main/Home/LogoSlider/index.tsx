@@ -152,11 +152,11 @@ function LogoSlider() {
 
     return (
         <Fragment>
-            <LogoSliderSec as="section" className='pt-3'>
+            <LogoSliderSec as="section" className='pt-3 mt-5'>
                 <div className='container text-center mb-3'>
-                    <Typography as="h2">Trusted the world over</Typography>
+                    <Typography as="h2" className='mb-3'>Trusted the world over</Typography>
                 </div>
-                <div className="container">
+                <div className="container mb-5">
                     <Swiper
                         modules={[Navigation, A11y, Autoplay]}
                         spaceBetween={0}

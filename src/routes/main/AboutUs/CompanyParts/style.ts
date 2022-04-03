@@ -28,6 +28,7 @@ export const CompanyPartsSec = styled.div`
           display: flex;
           align-items: center;
           padding-left: 10px;
+          margin-left: 1rem;
         }
       }
     }

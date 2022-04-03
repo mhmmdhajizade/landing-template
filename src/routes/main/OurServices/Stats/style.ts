@@ -27,7 +27,7 @@ export const StatsSec = styled.div`
       width: 180px;
       border-radius: 100%;
       border: 5px solid ;
-      border-color: ${props => props.theme.style.getColor("text" , "lighter" , 0.5)};
+      border-color: ${props => props.theme.style.getColor("text")};
       .number {
         display: flex;
         align-items: center;

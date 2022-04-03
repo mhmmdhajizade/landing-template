@@ -18,7 +18,7 @@ function DownloadBox() {
                             <Typography $fontSize='3rem'>
                                 {dictionary.downloadBoxMainTitle}
                             </Typography>
-                            <Typography>
+                            <Typography className='mb-5'>
                                 {dictionary.downloadBoxDescription}
                             </Typography>
                             <div className="downloadBtn">

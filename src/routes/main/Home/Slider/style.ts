@@ -34,12 +34,15 @@ position : relative;
 .col-lg-5{
     display: flex;
     align-items: center;
+    .MainTitle{
+        padding-right: 150px;
+    }
     p{
         margin-bottom: 0;
     }
     button{
         
-        width: 70%;
+        width: 100%;
         height: 45px;
     }
 }
