@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const arrowAnimation = keyframes`
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(-1)
+  }
+`;
 
 export const FooterSec = styled.div`
   background-color: #1d1d1f;
@@ -11,11 +20,15 @@ export const FooterSec = styled.div`
     display: flex;
     .col-lg-4 {
       .Toggles {
-        ${props => props.theme.lang.dictionary["theme.langLabel"] === "en" && "margin-left: 10px;"}
-        ${props => props.theme.lang.dictionary["theme.langLabel"] === "fa" && "margin-right: 10px;"}
+        ${(props) =>
+          props.theme.lang.dictionary["theme.langLabel"] === "en" &&
+          "margin-left: 10px;"}
+        ${(props) =>
+          props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
+          "margin-right: 10px;"}
         padding: 10px;
       }
-      .lanToggles{
+      .lanToggles {
         padding-left: 15px;
         padding-right: 15px;
       }
@@ -35,24 +48,28 @@ export const FooterSec = styled.div`
         border-bottom: 1px solid white;
         border-radius: 0;
       }
-      
     }
     .lastCol {
-        button {
-          background-color: #1d1d1f;
-          margin-top: 20px;
-          .arrow {
-            &:before {
-              margin-left: 15px;
-              font-size: 1.5rem !important;
-              vertical-align: middle;
-              ${(props) =>
-                props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
-                `transform: rotate(180deg);`}
-            }
+      button {
+        background-color: #1d1d1f;
+        margin-top: 20px;
+        display: flex;
+        .arrow {
+          &:before {
+            margin-left: 15px;
+            font-size: 1.5rem !important;
+            vertical-align: middle;
+            ${(props) =>
+              props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
+              `transform: rotate(180deg);`}
           }
         }
       }
+      button:hover div{
+          animation: ${arrowAnimation} 1s forwards;
+          margin-left: 8px;
+      }
+    }
     img {
       width: 40%;
     }

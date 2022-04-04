@@ -1,3 +1,4 @@
+import { arrowAnimation } from "containers/Main/Footer/style";
 import styled from "styled-components";
 
 export const CompanyPartsSec = styled.div`
@@ -30,6 +31,10 @@ export const CompanyPartsSec = styled.div`
           padding-left: 10px;
           margin-left: 1rem;
         }
+      }
+      button:hover i{
+          animation: ${arrowAnimation} 1s forwards;
+          margin-left: 8px;
       }
     }
   }

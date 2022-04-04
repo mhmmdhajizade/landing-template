@@ -1,13 +1,16 @@
 import styled from "styled-components";
+import { IHeaderProps } from ".";
 
 type IProps = {
-  $textColor : "black" | "white",
+  $btnTextColor : "black" | "white",
 }
+
+
 
 export const HeaderSec = styled.header<Partial<IProps>>`
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
-  border-color: ${props => props.theme.style.getColor("grey" , "darker")};
+  border-color: ${props => props.theme.style.getColor("grey" , "darker" , 0.5)};
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +36,7 @@ export const HeaderLay = styled.div`
   box-sizing: border-box;
   z-index: 0;
 `;
-export const HeaderWrapepr = styled.div`
+export const HeaderWrapepr = styled.div<Partial<IProps>>`
   position: relative;
   display: flex;
   align-items: center;
@@ -54,7 +57,8 @@ export const HeaderWrapepr = styled.div`
     z-index: 1;
     &::after {
       content: "";
-      background: ${props=> props.theme.style.getColor('light',"darker",.1)};
+      ${props => props.$btnTextColor === "white" && `background: ${props.theme.style.getColor('light',"darker",.1)};`}
+      ${props => props.$btnTextColor === "black" && `background: ${props.theme.style.getColor('dark',"darker",.1)};`}
       width: 0;
       height: 100%;
       left: 0;
@@ -105,7 +109,7 @@ export const Navbar = styled.ul`
   vertical-align: baseline;
   justify-content: space-around;
 `;
-export const NavItems = styled.li`
+export const NavItems = styled.li<Partial<IProps>>`
   display: flex;
   text-align: center;
   vertical-align: baseline;
@@ -116,7 +120,8 @@ export const NavItems = styled.li`
     z-index: 1;
     &::after {
       content: "";
-      background: ${props=> props.theme.style.getColor('light',"darker",.1)};
+      ${props => props.$btnTextColor === "white" && `background: ${props.theme.style.getColor('light',"darker",.1)};`}
+      ${props => props.$btnTextColor === "black" && `background: ${props.theme.style.getColor('dark',"darker",.1)};`}
       width: 0;
       height: 100%;
       left: 0;

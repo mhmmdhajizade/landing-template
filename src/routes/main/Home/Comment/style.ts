@@ -1,4 +1,7 @@
-import styled from "styled-components";
+import { arrowAnimation } from "containers/Main/Footer/style";
+import styled, { keyframes } from "styled-components";
+
+
 
 export const CommentSec = styled.div`
   margin-top: 70px;
@@ -6,23 +9,25 @@ export const CommentSec = styled.div`
     p {
       margin-bottom: 0;
     }
-    .header{
+    .header {
+      display: flex;
+      justify-content: space-between;
+      .sliderBtn {
+        align-items: center;
         display: flex;
-        justify-content: space-between;
-        .sliderBtn{
-            align-items: center;
-            display: flex;
-            ${props => props.theme.lang.dictionary["theme.langLabel"]=== "fa" && "flex-direction: row-reverse;"}
+        ${(props) =>
+          props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
+          "flex-direction: row-reverse;"}
+      }
+      .arrows {
+        &:before {
+          font-size: 3rem;
+          color: gray;
         }
-        .arrows{
-            &:before{
-                font-size: 3rem;
-                color: gray;
-            }
-        }
+      }
     }
-    .swiper-scrollbar{
-        display: none;
+    .swiper-scrollbar {
+      display: none;
     }
     .swiper-slide {
       margin-top: 20px;
@@ -30,15 +35,15 @@ export const CommentSec = styled.div`
       .sliderSec {
         display: flex;
         align-items: baseline;
-        .col-lg-2{
+        .col-lg-2 {
           text-align: center;
           padding-right: 0;
         }
-        .commentText{
-            margin-bottom: 50px;
+        .commentText {
+          margin-bottom: 50px;
         }
-        .userDetail{
-            margin-top: 20px;
+        .userDetail {
+          margin-top: 20px;
         }
       }
     }

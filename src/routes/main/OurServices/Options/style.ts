@@ -1,3 +1,4 @@
+import { arrowAnimation } from "containers/Main/Footer/style";
 import styled from "styled-components";
 
 export const OptionsSec = styled.div`
@@ -23,8 +24,11 @@ export const OptionsSec = styled.div`
           display: flex;
           align-items: center;
           padding-left: 10px;
-          margin-left: 1rem;
         }
+      }
+      button:hover i{
+          animation: ${arrowAnimation} 1s forwards;
+          margin-left: 8px;
       }
     }
   }

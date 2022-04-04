@@ -1,3 +1,4 @@
+import { arrowAnimation } from "containers/Main/Footer/style";
 import styled from "styled-components";
 
 export const ContentSec = styled.div`
@@ -44,5 +45,9 @@ export const ContentSec = styled.div`
         align-items: center;
       }
     }
+    button:hover i{
+          animation: ${arrowAnimation} 1s forwards;
+          margin-left: 8px;
+      }
   }
 `;

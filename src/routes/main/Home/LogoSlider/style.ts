@@ -8,7 +8,7 @@ export const LogoSliderSec = styled.div`
   margin-top: 70px;
   .container {
     h2 {
-      text-align:left;
+      text-align: left;
       margin-bottom: 40px;
     }
   }
@@ -34,21 +34,24 @@ export const LogoSliderSec = styled.div`
       props.theme.style.name === "light" &&
       `bacground-color: ${props.theme.style.getColor("light")};`} 
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px;
-      border-color: rgb(219,219,219,1);
-      overflow: visible;
-      img{
-        margin-bottom: 80px;
-        margin-top: 80px;
-      }
-      div{
-        text-align: left;
-        padding-left: 40px;
-        padding-bottom: 40px;
-      }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    border-color: rgb(219, 219, 219, 1);
+    overflow: visible;
+    &:hover{
+      background-color: ${props => props.theme.style.getColor("dark" , "lightest" , 0.1)};
+    }
+    img {
+      margin-bottom: 80px;
+      margin-top: 80px;
+    }
+    div {
+      text-align: left;
+      padding-left: 40px;
+      padding-bottom: 40px;
+    }
   }
 `;
 export const LogoImg = styled.img<Partial<IProps>>`

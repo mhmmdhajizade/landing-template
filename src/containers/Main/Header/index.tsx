@@ -37,13 +37,13 @@ const HeaderPanel = ({ headerProps }: IHeaderProps) => {
         <Fragment>
             <HeaderSec id="header">
                 <HeaderLay id="headerLay" className="container-fluid" >
-                    <HeaderWrapepr >
+                    <HeaderWrapepr $btnTextColor={headerProps.color}>
                         <LogoSec className="col-lg-1">
                             <Logo alt="" src={headerProps.color === "black" ? logoDark : logoLight} />
                         </LogoSec>
                         <Menusec className="col-lg-9">
                             <Navbar>
-                                <NavItems>
+                                <NavItems $btnTextColor={headerProps.color}>
                                     <Button
                                         $textColor={{
                                             name: headerProps.color

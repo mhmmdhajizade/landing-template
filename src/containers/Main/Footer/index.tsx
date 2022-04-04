@@ -125,7 +125,7 @@ const FooterPanel = () => {
                                 {dictionary.footerNewsDesc}
                             </Typography>
                             <Input type="email" $textColor={{ name: "white" }} placeholder="Email" />
-                            <Button $textColor={{ name: "white" }}>{dictionary.footerNewsButton}<i className="icon-right-arrow-7351 arrow" /></Button>
+                            <Button $textColor={{ name: "white" }}>{dictionary.footerNewsButton}<div><i className="icon-right-arrow-7351 arrow" /></div></Button>
                         </div>
                     </div>
                 </div>

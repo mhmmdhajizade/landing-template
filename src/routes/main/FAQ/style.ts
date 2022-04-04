@@ -20,6 +20,16 @@ export const FaqPageSec = styled.div`
           props.theme.style.getColor("grey", "darkest")};
         .container {
           padding: 50px 45px;
+          .title{
+            display: flex;
+            align-items: center;
+            .row{
+              width: 100%;
+            }
+            i{
+              font-size: 2rem;
+            }
+          }
         }
       }
     }

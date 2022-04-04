@@ -7,7 +7,7 @@ import { Button, Typography } from 'components/HtmlElements'
 function Awards() {
   return (
     <Fragment>
-      <AwardsSec as="section" className='container-fluid'> 
+      <AwardsSec as="section" className='container-fluid'>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-12 picSec">
@@ -37,7 +37,9 @@ function Awards() {
                         </Typography>
                         <Button>
                           Read more
-                          <i className="icon-right-arrow-7351 arrow"></i>
+                          <div>
+                            <i className="icon-right-arrow-7351 arrow"></i>
+                          </div>
                         </Button>
                       </div>
                     </div>

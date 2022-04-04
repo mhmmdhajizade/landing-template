@@ -4,27 +4,45 @@ import React, { Fragment, useEffect, useState } from 'react'
 import image from 'assets/img/p9-img-1-300x256.jpg'
 import { FaqPageSec } from './style'
 import { IHeaderProps } from 'containers/Main/Header'
+import classNames from 'classnames'
 
 interface IProps {
     callbackHeader?: (headerProps: IHeaderProps['headerProps']) => void
-  }
+}
 
 function FaqPage({ callbackHeader }: IProps) {
+    const [iconClass, setIconClass] = useState("icon-plus")
 
     useEffect(() => {
-        if(callbackHeader){
-          callbackHeader({
-            color: "black",
-          })
-        }
-        return()=>{
-          if(callbackHeader){
+        if (callbackHeader) {
             callbackHeader({
-              color: "white",
+                color: "black",
             })
-          }
         }
-      }, [])
+        return () => {
+            if (callbackHeader) {
+                callbackHeader({
+                    color: "white",
+                })
+            }
+        }
+    }, [])
+
+    function collapseHandler(index: Number) {
+        var paragh = document.getElementById(`p${index}`)
+        var icon = document.getElementById(`i${index}`)
+        var title = document.getElementById(`h${index}`)
+        if (paragh && icon && title){
+            if (title.ariaExpanded === "true"){
+                icon.classList.remove('icon-plus')
+                icon.classList.add('icon-minus')
+            }
+            else{
+                icon.classList.remove('icon-minus')
+                icon.classList.add('icon-plus')
+            }
+        }
+    }
 
     const [questions, setQuestions] = useState([
         {
@@ -144,15 +162,23 @@ function FaqPage({ callbackHeader }: IProps) {
                     <div className="row">
                         <div className="col-lg-9 col-9">
                             {questions.map((question, index) => {
+                                console.log(index)
                                 return <div className='questionBox' key={index}>
                                     <Typography className='numbers'>{index < 9 ? `0${index + 1}` : `${index + 1}`}.</Typography>
                                     <div className="container-fluid">
                                         <div className="container">
-                                            <div className="title">
-                                                <Typography $fontSize='2rem'>{question.title}</Typography>
+                                            <div className="title" id={`h${index}`} onClick={e => collapseHandler(index)} data-bs-toggle="collapse" data-bs-target={`#p${index}`} aria-expanded="false" aria-controls={`p${index}`}>
+                                                <div className="row">
+                                                    <div className="col-lg-11">
+                                                        <Typography $fontSize='2rem'>{question.title}</Typography>
+                                                    </div>
+                                                    <div className="col-lg-1">
+                                                        <i className="icon-plus" id={`i${index}`} />
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="description" id={`p${index}`}>
-                                                <Typography $textColor={{ name: "txt", mood: "lighter" }} $fontSize='1.1rem' >{question.description}</Typography>
+                                            <div className="description collapse" id={`p${index}`} >
+                                                <Typography $textColor={{ name: "txt", mood: "lighter" }} $fontSize='1.1rem' id={`p${index}`} >{question.description}</Typography>
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +206,7 @@ function FaqPage({ callbackHeader }: IProps) {
                                 <Typography $fontSize='1.5rem' className='mb-3'>
                                     Why we are here?
                                 </Typography>
-                                <Typography $fontSize='1.1rem'>
+                                <Typography $fontSize='1.1rem' className='collapse' id={`p`}>
                                     Lorem ipsum dolor sit amet, vis vocent malorum scriptorem mei ex. At mei vocent ceteros.
                                 </Typography>
                             </div>
@@ -193,3 +219,8 @@ function FaqPage({ callbackHeader }: IProps) {
 }
 
 export default FaqPage
+
+// classNames({
+//     'icon-plus': document.getElementById(`p${index}`) ? document.getElementById(`p${index}`).classList.contains('show'): ,
+//     'icon-minus':
+// })
