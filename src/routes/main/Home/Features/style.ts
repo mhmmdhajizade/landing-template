@@ -6,14 +6,13 @@ export const AppFeaturesSec = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  img {
-    }
   .col-lg-4 {
     p {
       text-align: center;
+      margin-bottom: 0;
     }
   }
   button{
-      margin: 30px;
+      margin: 20px;
   }
 `;

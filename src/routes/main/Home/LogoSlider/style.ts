@@ -40,8 +40,10 @@ export const LogoSliderSec = styled.div`
     border: solid 1px;
     border-color: rgb(219, 219, 219, 1);
     overflow: visible;
-    &:hover{
-      background-color: ${props => props.theme.style.getColor("dark" , "lightest" , 0.1)};
+    &:hover {
+      background-color: ${(props) =>
+        props.theme.style.getColor("dark", "lightest", 0.1)};
+      transition: background-color 0.5s;
     }
     img {
       margin-bottom: 80px;
@@ -49,7 +51,10 @@ export const LogoSliderSec = styled.div`
     }
     div {
       text-align: left;
-      padding-left: 40px;
+      @media (min-width: 765px) {
+        padding-left: 40px;
+        
+      }
       padding-bottom: 40px;
     }
   }

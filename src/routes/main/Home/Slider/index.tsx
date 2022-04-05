@@ -14,10 +14,10 @@ const HomeSlider = () => {
             <Slider as="section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-7 col-12">
+                        <div className="col-lg-6 col-12 imgSec">
                             <img alt="" src={image} />
                         </div>
-                        <div className="col-lg-5 col-12">
+                        <div className="col-lg-6 col-12 textSec">
                             <div>
                                 <Typography
                                     $textColor={{ name: 'white' }}

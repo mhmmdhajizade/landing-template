@@ -64,7 +64,7 @@ function Comments() {
                             <Typography>
                                 {dictionary.commentSectionSmallTitle}
                             </Typography>
-                            <Typography $fontSize='3rem' className='mb-5'>
+                            <Typography $fontSize='3rem' className='mb-5 mainTitle'>
                                 {dictionary.commentSectionMainTitle}
                             </Typography>
                         </div>
@@ -104,11 +104,11 @@ function Comments() {
                             return <SwiperSlide key={index}>
                                 <div className='sliderSec'>
                                     <div className="row">
-                                        <div className='col-lg-2 col-3'>
+                                        <div className='col-lg-2 col-12'>
                                             <img alt='' src={item.image} />
                                         </div>
-                                        <div className='col-lg-10 col-9'>
-                                            <Typography className='commentText mb-5' $fontSize='1.5rem' >
+                                        <div className='col-lg-10 col-12'>
+                                            <Typography className='commentText mb-4' $fontSize='1.5rem' >
                                                 {item.commentText}
                                             </Typography>
                                             <div className='userDetail'>

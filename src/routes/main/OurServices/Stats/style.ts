@@ -8,15 +8,14 @@ export const StatsSec = styled.div`
     text-align: center;
     margin-bottom: 50px;
   }
-  .row {
-    .col-lg-6 {
+  .sss {
       display: flex;
       align-items: center;
-    }
     .textSec {
       padding-right: 30px;
+      padding-left: 15px;
     }
-    .progress {
+    .progresss {
       text-align: center;
     }
     .progressSec {

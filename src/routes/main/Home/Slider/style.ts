@@ -15,8 +15,13 @@ position : relative;
 .container{
     padding-top: 50px;
     margin-bottom: 100px;
-    .col-lg-7{
+    .imgSec{
         text-align: center;
+        img{
+            @media(max-width: 420px){
+                width:100%
+            }
+        }
     }
 }
 &:after{
@@ -31,11 +36,17 @@ position : relative;
     bottom: 0;
     left: 0;
 }
-.col-lg-5{
+.textSec{
     display: flex;
     align-items: center;
+    div{
+        width: 100%;
+    }
     .MainTitle{
-        padding-right: 150px;
+        @media (min-width:1440px){
+            padding-right: 255px;
+        }
+        
     }
     p{
         margin-bottom: 0;

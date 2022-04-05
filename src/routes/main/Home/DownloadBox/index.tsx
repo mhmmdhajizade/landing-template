@@ -15,7 +15,7 @@ function DownloadBox() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-12">
-                            <Typography $fontSize='3rem'>
+                            <Typography $fontSize='3rem' className='mb-1'>
                                 {dictionary.downloadBoxMainTitle}
                             </Typography>
                             <Typography className='mb-5'>

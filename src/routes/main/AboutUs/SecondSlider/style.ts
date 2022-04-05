@@ -12,6 +12,10 @@ export const SecondSliderSec = styled.div`
             padding-right: 150px;
             line-height: 50px;
             margin-bottom: 30px;
+            @media(max-width: 760px){
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
         
     }

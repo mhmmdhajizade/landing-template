@@ -85,7 +85,6 @@ export const LogoSec = styled.div`
 `;
 export const Logo = styled.img`
   height: 100%;
-  width: 100%;
   padding: 30px;
 `;
 
@@ -95,7 +94,9 @@ export const Menusec = styled.nav`
   text-align: center;
   box-sizing: border-box;
   justify-content: center;
-  padding-left: 80px;
+  @media(max-width: 900px){
+    display: none;
+  }
 `;
 export const Navbar = styled.ul`
   position: relative;
@@ -149,6 +150,9 @@ export const SignSec = styled.div`
   align-items: center;
   height: 100%;
   justify-content: center;
+  i{
+    margin-right: 5px;
+  }
   /* Button {
     height: 100%;
   

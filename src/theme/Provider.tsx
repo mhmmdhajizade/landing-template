@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.style.getColor('light')};
     font-family : ${props => props.theme.lang.dictionary['theme.langLabel'] === "fa" ? "Shabnam" : "DmSans"}
   }
+  body .sticky{
+    position: fixed;
+}
 `
 const CustomThemeProvider = ({ children }: IProviderProps) => {
     const style = useStyle();

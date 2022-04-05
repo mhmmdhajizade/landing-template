@@ -14,6 +14,9 @@ export const AwardsSec = styled.div`
       margin-right: 90px;
       align-items: center;
       padding-top: 20px;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     .mainImg {
       width: 100%;
@@ -38,9 +41,9 @@ export const AwardsSec = styled.div`
           margin-left: 1rem;
         }
       }
-      button:hover div{
-          animation: ${arrowAnimation} 1s forwards;
-          margin-left: 8px;
+      button:hover div {
+        animation: ${arrowAnimation} 1s forwards;
+        margin-left: 8px;
       }
     }
   }

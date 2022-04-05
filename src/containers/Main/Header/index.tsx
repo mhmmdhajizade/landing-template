@@ -37,11 +37,11 @@ const HeaderPanel = ({ headerProps }: IHeaderProps) => {
         <Fragment>
             <HeaderSec id="header">
                 <HeaderLay id="headerLay" className="container-fluid" >
-                    <HeaderWrapepr $btnTextColor={headerProps.color}>
-                        <LogoSec className="col-lg-1">
+                    <HeaderWrapepr className="row" $btnTextColor={headerProps.color}>
+                        <LogoSec className="col-md-3 col-6">
                             <Logo alt="" src={headerProps.color === "black" ? logoDark : logoLight} />
                         </LogoSec>
-                        <Menusec className="col-lg-9">
+                        <Menusec className="col-md-6 ">
                             <Navbar>
                                 <NavItems $btnTextColor={headerProps.color}>
                                     <Button
@@ -73,8 +73,9 @@ const HeaderPanel = ({ headerProps }: IHeaderProps) => {
                                 </NavItems>
                             </Navbar>
                         </Menusec>
-                        <SignSec className="col-lg-2">
+                        <SignSec className="col-md-3 col-6">
                             <Button
+                                $isBlock
                                 $textColor={{
                                     name: headerProps.color
                                 }}
@@ -83,6 +84,7 @@ const HeaderPanel = ({ headerProps }: IHeaderProps) => {
                                 {dictionary.signup}
                             </Button>
                             <Button
+                             $isBlock
                                 $textColor={{
                                     name: headerProps.color
                                 }}

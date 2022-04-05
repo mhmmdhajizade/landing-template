@@ -1,8 +1,6 @@
 import { arrowAnimation } from "containers/Main/Footer/style";
 import styled, { keyframes } from "styled-components";
 
-
-
 export const CommentSec = styled.div`
   margin-top: 70px;
   .container {
@@ -12,6 +10,12 @@ export const CommentSec = styled.div`
     .header {
       display: flex;
       justify-content: space-between;
+      .mainTitle{
+        @media (max-width: 410px){
+          font-size: 2rem;
+        }
+      }
+
       .sliderBtn {
         align-items: center;
         display: flex;
@@ -23,6 +27,9 @@ export const CommentSec = styled.div`
         &:before {
           font-size: 3rem;
           color: gray;
+          @media (max-width: 600px) {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -41,9 +48,6 @@ export const CommentSec = styled.div`
         }
         .commentText {
           margin-bottom: 50px;
-        }
-        .userDetail {
-          margin-top: 20px;
         }
       }
     }

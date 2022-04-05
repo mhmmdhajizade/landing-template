@@ -21,7 +21,7 @@ function AppTools() {
                             <Typography $fontSize='2rem' className='mainTitle mb-5'>{dictionary.appToolsMainTitle}</Typography>
                             <div className="container-fluid">
                                 <div className="row">
-                                    <div className="col-lg-2 col-12">
+                                    <div className="col-md-3 col-4">
                                         <div className="line">
                                             <Button $isCircle={true} $bgColor={{ name: "light" }} $borderColor={{ name: 'primary' }} className='btn'>
                                                 <i className="icon-linearicons_laptop-phone icons"></i>
@@ -34,7 +34,7 @@ function AppTools() {
                                             </Button>
                                         </div>
                                     </div>
-                                    <div className="col-lg-10 col-12">
+                                    <div className="col-md-9 col-8">
                                         <div className="textBox ">
                                             <Typography $fontSize='1.75rem'>
                                                 {dictionary.appToolsItemTitle_1}

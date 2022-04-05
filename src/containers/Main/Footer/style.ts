@@ -22,10 +22,10 @@ export const FooterSec = styled.div`
       .Toggles {
         ${(props) =>
           props.theme.lang.dictionary["theme.langLabel"] === "en" &&
-          "margin-left: 10px;"}
+          "margin-left: 15px;"}
         ${(props) =>
           props.theme.lang.dictionary["theme.langLabel"] === "fa" &&
-          "margin-right: 10px;"}
+          "margin-right: 15px;"}
         padding: 10px;
       }
       .lanToggles {

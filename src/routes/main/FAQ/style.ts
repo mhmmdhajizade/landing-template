@@ -1,6 +1,17 @@
 import styled, { keyframes } from "styled-components";
 
+interface FaqBoxProps {
+  $isOpen? : boolean
+}
 
+const collapseIn = keyframes`
+  from{
+    transform : translateY(-20%)
+  }
+  to{
+    transform : translateY(0)
+  }
+`
 export const FaqPageSec = styled.div`
   .mainSlide {
     padding-top: 180px;
@@ -20,12 +31,13 @@ export const FaqPageSec = styled.div`
           props.theme.style.getColor("grey", "darkest")};
         .container {
           padding: 50px 45px;
+          @media(max-width:450px){
+            padding: 50px 10px;
+          }
           .title{
             display: flex;
             align-items: center;
-            .row{
-              width: 100%;
-            }
+            
             i{
               font-size: 2rem;
             }
@@ -35,6 +47,9 @@ export const FaqPageSec = styled.div`
     }
     .col-lg-3 {
       padding-left: 40px;
+      @media(max-width:760px){
+        display: none;
+      }
       .searchBox {
         margin-top: -14px;
       }
@@ -68,5 +83,12 @@ export const FaqPageSec = styled.div`
           }
       }
     }
+  }
+`;
+
+
+export const FaqBox = styled.div<FaqBoxProps>`
+  .description{
+    animation:  0.5s ease-out  ${collapseIn};;
   }
 `;
