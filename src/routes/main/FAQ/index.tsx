@@ -4,10 +4,6 @@ import React, { Fragment, useEffect, useState } from 'react'
 import image from 'assets/img/p9-img-1-300x256.jpg'
 import { FaqPageSec , FaqBox } from './style'
 import { IHeaderProps } from 'containers/Main/Header'
-import { Accordion } from 'react-bootstrap'
-import AccordionItem from 'react-bootstrap/esm/AccordionItem'
-import AccordionHeader from 'react-bootstrap/esm/AccordionHeader'
-import AccordionBody from 'react-bootstrap/esm/AccordionBody'
 import classNames from 'classnames'
 
 interface IProps {
