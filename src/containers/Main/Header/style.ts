@@ -161,4 +161,9 @@ export const SignSec = styled.div`
  
     }
   } */
+  Button {
+    @media (max-width: 487px) {
+      font-size: 0.9rem ;
+    }
+  }
 `;

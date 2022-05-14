@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const AppToolsSec = styled.div`
   margin-top: 70px;
+
+  @media (max-width: 991px) {
+    text-align: center !important;
+  }
   .container {
     .layout {
       display: flex;
@@ -48,6 +52,16 @@ export const AppToolsSec = styled.div`
       justify-content: space-around;
       .textBox {
         margin-bottom: 10px;
+        .titles {
+          @media (max-width: 474px) {
+            font-size: 1.5rem ;
+          }
+        }
+        .descs {
+          @media (max-width: 474px) {
+            font-size: 0.9rem ;
+          }
+        }
       }
       p {
         margin-bottom: 0;

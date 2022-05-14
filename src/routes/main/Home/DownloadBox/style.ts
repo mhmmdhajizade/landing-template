@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const DownloadBoxSec = styled.div`
   margin-top: 70px;
+
+  @media (max-width: 991px) {
+    text-align: center !important;
+  }
   display: flex;
   .row {
     align-items: center;
@@ -17,6 +21,10 @@ export const DownloadBoxSec = styled.div`
   .downloadBtn {
     display: flex;
     margin-top: 20px;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
     button {
       display: flex;
       margin: 5px;
@@ -41,6 +49,14 @@ export const DownloadBoxSec = styled.div`
       }
       .smaller {
         margin-bottom: -7px;
+        @media (max-width: 700px) {
+          font-size: 0.6rem;
+        }
+      }
+      .bigger {
+        @media (max-width: 991px) {
+          font-size: 1rem ;
+        }
       }
     }
     p {

@@ -7,6 +7,9 @@ export const AppSecLayout = styled.div`
   margin-top: 70px;
   position: relative;
   padding-bottom: 100px;
+  @media (max-width: 991px) {
+    text-align: center !important;
+  }
   .container {
     padding-top: 100px;
   }

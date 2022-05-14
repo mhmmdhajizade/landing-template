@@ -3,6 +3,10 @@ import styled, { keyframes } from "styled-components";
 
 export const CommentSec = styled.div`
   margin-top: 70px;
+
+  @media (max-width: 991px) {
+    text-align: center !important;
+  }
   .container {
     p {
       margin-bottom: 0;
@@ -10,8 +14,8 @@ export const CommentSec = styled.div`
     .header {
       display: flex;
       justify-content: space-between;
-      .mainTitle{
-        @media (max-width: 410px){
+      .mainTitle {
+        @media (max-width: 410px) {
           font-size: 2rem;
         }
       }
@@ -48,6 +52,10 @@ export const CommentSec = styled.div`
         }
         .commentText {
           margin-bottom: 50px;
+
+          @media (max-width: 991px) {
+            margin-top: 40px;
+          }
         }
       }
     }

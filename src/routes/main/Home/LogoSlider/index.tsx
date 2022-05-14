@@ -168,6 +168,18 @@ function LogoSlider() {
                         loop
                         freeMode
                         onSwiper={swiper => _refSwiper.current = swiper}
+                        breakpoints={
+                            {
+                                100: {
+                                    spaceBetween:  0,
+                                    slidesPerView: 3
+                                },
+                                767: {
+                                    spaceBetween:  0,
+                                    slidesPerView: 5
+                                }
+                            }
+                        }
                     >
                         {images.map((item, index) => {
                             return <SwiperSlide key={index}>
@@ -180,7 +192,7 @@ function LogoSlider() {
                     </Swiper>
                 </div>
             </LogoSliderSec>
-        </Fragment>
+        </Fragment >
     )
 }
 

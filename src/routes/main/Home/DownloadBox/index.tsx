@@ -15,7 +15,7 @@ function DownloadBox() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-12">
-                            <Typography $fontSize='3rem' className='mb-1'>
+                            <Typography $fontSize='2.25rem' className='mb-1 mainTitle'>
                                 {dictionary.downloadBoxMainTitle}
                             </Typography>
                             <Typography className='mb-5'>
@@ -28,7 +28,7 @@ function DownloadBox() {
                                         <Typography $fontSize='0.75rem' className='smaller'>
                                             {dictionary.downloadBoxAppStoreButtonSmTitle}
                                         </Typography>
-                                        <Typography $fontSize='1.5rem'>
+                                        <Typography $fontSize='1.5rem' className='bigger'>
                                             {dictionary.downloadBoxAppStoreButtonLgTitle}
                                         </Typography>
                                     </div>
@@ -39,7 +39,7 @@ function DownloadBox() {
                                         <Typography $fontSize='0.75rem' className='smaller'>
                                             {dictionary.downloadBoxGooglePlayButtonSmTitle}
                                         </Typography>
-                                        <Typography $fontSize='1.5rem'>
+                                        <Typography $fontSize='1.5rem' className='bigger'>
                                             {dictionary.downloadBoxGooglePlayButtonLgTitle}
                                         </Typography>
                                     </div>

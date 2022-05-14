@@ -36,26 +36,26 @@ function AppTools() {
                                     </div>
                                     <div className="col-md-9 col-8">
                                         <div className="textBox ">
-                                            <Typography $fontSize='1.75rem'>
+                                            <Typography $fontSize='1.75rem' className='titles'>
                                                 {dictionary.appToolsItemTitle_1}
                                             </Typography>
-                                            <Typography $fontSize='1rem'>
+                                            <Typography $fontSize='1rem' className='descs'>
                                                 {dictionary.appToolsItemDesc_1}
                                             </Typography>
                                         </div>
                                         <div className="textBox ">
-                                            <Typography $fontSize='1.75rem'>
+                                            <Typography $fontSize='1.75rem' className='titles'>
                                                 {dictionary.appToolsItemTitle_2}
                                             </Typography>
-                                            <Typography $fontSize='1rem'>
+                                            <Typography $fontSize='1rem' className='descs'>
                                                 {dictionary.appToolsItemDesc_2}
                                             </Typography>
                                         </div>
                                         <div className="textBox ">
-                                            <Typography $fontSize='1.75rem'>
+                                            <Typography $fontSize='1.75rem' className='titles'>
                                                 {dictionary.appToolsItemTitle_3}
                                             </Typography>
-                                            <Typography $fontSize='1rem'>
+                                            <Typography $fontSize='1rem' className='descs'>
                                                 {dictionary.appToolsItemDesc_3}
                                             </Typography>
                                         </div>
